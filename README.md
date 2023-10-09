@@ -1,3 +1,3 @@
 # Gateway Project
 
-## Gateway Nursery, Preparatory and High School Website
+## Gateway Daycare, Nursery, Preparatory and High School Website
