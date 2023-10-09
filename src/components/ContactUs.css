@@ -1,0 +1,95 @@
+/* CONTACT SECTION */
+#contact {
+  padding: 7% 2rem;
+  position: relative;
+  background-image: url("/public/gateway_topview.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-color: var(--text-white);
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.65)
+  );
+  z-index: 1;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+}
+
+.contact-container h1 {
+  color: var(--text-white);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.contact-container h1:nth-child(2) {
+  color: var(--accent);
+  margin-bottom: 4rem;
+}
+
+.contact-link {
+  color: #000;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: var(--accent);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link:hover {
+  background-color: var(--accent);
+  opacity: 0.8;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 575px) {
+  #contact {
+    padding: 7.5rem 2rem;
+  }
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-container h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .contact-container h1:nth-child(2) {
+    color: var(--accent);
+    margin-bottom: 2rem;
+  }
+
+  .contact-link {
+    color: #000;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: var(--accent);
+    padding: 0.75rem 1.75rem;
+  }
+}

@@ -1,0 +1,54 @@
+ "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+
+  <h1 className="text-5xl font-bold text-gray-100 leading-tight">
+            Gateway Nursery And <br /> Preparatory School
+          </h1>
+
+           /* Hamburger Icon Styles */
+  .hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 24px;
+    height: 3px;
+    background-color: #333; /* Adjust color as needed */
+  }
+
+  /* 'X' Icon Styles */
+  .close-icon {
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .bar {
+    width: 24px;
+    height: 3px;
+    background-color: #333; /* Adjust color as needed */
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+
+  /* Rotate bars to form 'X' on hover or active state */
+  .close-icon:hover .bar:nth-child(1) {
+    transform: rotate(45deg) translate(3px, 3px);
+  }
+
+  .close-icon:hover .bar:nth-child(2) {
+    opacity: 0; /* Hide middle bar */
+  }
+
+  .close-icon:hover .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(3px, -3px);
+  }

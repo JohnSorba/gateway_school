@@ -1,0 +1,47 @@
+/* TESTIMONIAL SECTION */
+
+.testimonial-container h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-darkBlue);
+  margin-bottom: 2rem;
+}
+
+.testimonial-flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 3rem;
+  flex-flow: wrap;
+}
+
+.testimony {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 275px;
+}
+
+.testimony img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+.testimony q {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.testimony h3 {
+  font-weight: 600;
+  color: var(--primary-darkBlue);
+}
+
+.testimony span {
+  color: gray;
+}

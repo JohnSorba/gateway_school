@@ -1,0 +1,153 @@
+#gallery {
+  padding: 7% 1rem;
+  background: var(--section-bg);
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-container header {
+  text-align: left;
+  margin-bottom: 4rem;
+}
+
+.main-container h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-darkBlue);
+  margin-bottom: 2rem;
+}
+
+.main-container p {
+  width: 70ch;
+}
+
+.gallery-main-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  overflow: hidden;
+  transition: 0.2s all;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.close-btn {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: var(--text-white);
+  cursor: pointer;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-size: 45px;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: 0.2s all;
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.prev:hover > *,
+.next:hover > * {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+}
+
+/* Media Query for mobile layout */
+@media (max-width: 768px) {
+  .gallery-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+  .gallery-main-container {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 575px) {
+  .main-container h2 {
+    font-size: 1.75rem;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+  }
+
+  .main-container p {
+    width: 100%;
+  }
+
+  .close-btn {
+    top: 20px;
+    right: 20px;
+  }
+}
