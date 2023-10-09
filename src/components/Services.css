@@ -116,7 +116,7 @@
 .service-description .flex-items {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .nav-btn-container {

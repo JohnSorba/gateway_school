@@ -21,7 +21,7 @@
 
   --tertiary-color: #90e0ef;
 
-  /* CHAT GPT COLOUR PALETTE */
+  /* CHATGPT COLOUR PALETTE */
 
   --primary-darkBlue: #0b3d91;
   --content-background: #66a3d2;
@@ -38,9 +38,6 @@
   margin: 0;
 }
 
-.bg {
-  background: linear-gradient();
-}
 /* 
 @layer base {
   html {
@@ -49,16 +46,17 @@
 } */
 
 html {
-  /* font-size: 62.5%; */
-  color: black;
+  font-size: 100%;
 }
 body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
+  /* color: #fff; */
 }
 
 .main-header {
   width: 100%;
+  color: #fff;
 }
 
 /* TABLET SCREENS */
