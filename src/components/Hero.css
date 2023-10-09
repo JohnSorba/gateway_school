@@ -9,7 +9,7 @@
 
 .hero-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 3fr 1fr;
   align-items: center;
   height: 100%;
   max-width: 1200px;
@@ -52,6 +52,46 @@
 
 .heading .school-title {
   font-size: 5rem;
+}
+
+/* .animated-text {
+  color: var(--primary-darkBlue);
+  color: var(--secondary-color);
+  color: var(--text-color);
+  animation-name: dropIn;
+  animation-duration: 4s;
+} */
+
+.drop-in {
+  animation: dropIn 1s ease-in-out;
+}
+.drop-out {
+  animation: dropOut 1s ease-in-out;
+}
+
+/* ANIMATE SCHOOL TEXT */
+@keyframes dropIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+    /* Start with zero opacity */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    /* Fully visible*/
+  }
+}
+
+@keyframes dropOut {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
 }
 
 @media (max-width: 992px) {
