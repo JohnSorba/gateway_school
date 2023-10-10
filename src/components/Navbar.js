@@ -52,6 +52,10 @@ function Navbar() {
         </h1>
 
         <div className={`menu ${isOpen ? "show" : ""}`}>
+          <h1 className="navbar-logo">
+            {" "}
+            <NavLink to="/">Gateway</NavLink>
+          </h1>
           <ul className="nav-links">
             <li>
               <NavLink to="/" className="nav-link">
@@ -120,14 +124,17 @@ function Navbar() {
 
             {/* ACADEMIC DROPDOWN LINK */}
             <li>
-              <NavLink to="/activities" className="nav-link dropdown-nav-link">
+              <NavLink
+                to="/activities"
+                className="nav-link dropdown-nav-link"
+                onClick={() => toggleDropdown(2)}
+              >
                 Academic
                 <ChevronDownIcon className="h-4 w-4" />
               </NavLink>
               <ul
-                id="dropdown2"
+                id="dropdown3"
                 className={`dropdown ${dropdownOpen[2] ? "open" : ""}`}
-                onClick={() => toggleDropdown(1)}
               >
                 <li>
                   <NavLink to="/gps" className="dropdown-link">
@@ -165,7 +172,11 @@ function Navbar() {
                 Contact Us
               </NavLink>
             </li>
-          </ul>
+          </ul>{" "}
+          <div className="contact-info">
+            <p>{`{81c Fort Street, Off Circular Rd., Freetown}`}</p>
+            <p>{`{(076) 483 409}`}</p>
+          </div>
         </div>
 
         {!isOpen ? (
