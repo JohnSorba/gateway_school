@@ -26,7 +26,6 @@ function HomePage({ isOpen, isDropdownOpen, toggleDropdown, toggleNavbar }) {
       {/* <AccApp /> */}
       <Gallery />
 
-      <SliderTest />
       <ContactUs />
       <Footer
         isOpen={isOpen}
