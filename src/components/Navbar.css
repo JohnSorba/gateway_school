@@ -95,7 +95,7 @@
 .dropdown {
   display: flex;
   flex-direction: column;
-  min-width: auto;
+  min-width: 200px;
   background-color: #fff;
   border-radius: 10px;
   padding: 0.5rem 0.5rem;
@@ -201,6 +201,10 @@ li:hover > .dropdown {
 
   .nav-links > li {
     padding: 0.25rem 0rem;
+  }
+
+  .nav-links:hover > * {
+    opacity: 1;
   }
 
   .nav-links .nav-link {

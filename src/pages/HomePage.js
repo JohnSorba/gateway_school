@@ -7,6 +7,8 @@ import Gallery from "../components/Gallery";
 
 import StaffSlide from "../components/StaffSlide";
 import ContactUs from "../components/ContactUs";
+import News from "../components/News";
+import SliderTest from "../components/SliderTest";
 
 function HomePage({ isOpen, isDropdownOpen, toggleDropdown, toggleNavbar }) {
   return (
@@ -17,12 +19,14 @@ function HomePage({ isOpen, isDropdownOpen, toggleDropdown, toggleNavbar }) {
         isDropdownOpen={isDropdownOpen}
         toggleDropdown={toggleDropdown}
       />
+      <News />
       <About_Section />
       <Services />
       <StaffSlide />
       {/* <AccApp /> */}
       <Gallery />
 
+      <SliderTest />
       <ContactUs />
       <Footer
         isOpen={isOpen}

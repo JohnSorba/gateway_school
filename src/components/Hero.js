@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./Hero.css";
 
 const names = [
@@ -103,21 +103,23 @@ function Hero() {
             </span>{" "}
           </h1>
           {/* <p>{description}</p> */}
-          <button className="btn">Apply Now</button>
+          <Link to="/contact" className="btn">
+            Contact Us
+          </Link>
         </div>
         <div className={`upcoming-events ${eventAnimation}`}>
           <h2>Upcoming Events</h2>
 
           <div className={`event`}>
             <h3>{currentEvent.eventTitle}</h3>
-            <p>Date: {currentEvent.date}</p>
-            <p>Time: {currentEvent.time}</p>
-            <p>Place: {currentEvent.location}</p>
+            <p>{currentEvent.date}</p>
+            <p>{currentEvent.time}</p>
+            <p>{currentEvent.location}</p>
             <p>{currentEvent.description}</p>
             {/* <p>{currentEvent.highlights}</p> */}
-            <NavLink to={currentEvent.registrationLink} className="event-link">
+            <Link to={currentEvent.registrationLink} className="event-link">
               Register Here
-            </NavLink>
+            </Link>
           </div>
         </div>
       </div>

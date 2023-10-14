@@ -7,5 +7,14 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  // plugins: [require("daisyui")],
+  daisyui: {
+    styled: false,
+    themes: false,
+    base: false,
+    utils: false,
+    logs: false,
+    rtl: false,
+    components: ["DButton", "DInput", "DCheckbox"],
+  },
 };

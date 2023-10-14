@@ -76,18 +76,18 @@
 .upcoming-events {
   /* display: none; */
   align-self: stretch;
-  color: #000;
+  color: #fff;
   border: 2px solid white;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.651);
-  background-color: var(--text-white);
+  background-color: rgba(0, 0, 0, 0.24);
+  /* background-color: var(--text-white); */
   opacity: 0.9;
   transition: 0.2s all;
   box-shadow: 2px 2px 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 .upcoming-events h2 {
-  color: var(--primary-darkBlue);
+  color: var(--text-white);
   align-self: stretch;
   justify-self: center;
   text-align: center;
@@ -235,9 +235,10 @@
   .hero-container .heading {
     font-size: 1.5rem;
     font-weight: 600;
+    line-height: 1.2;
   }
 
   .heading .school-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
