@@ -4,12 +4,17 @@
 
 #header,
 #social-links {
-  background: var(--gradient-bg);
+  background: var(--section-bg);
 }
 
 /* CONTACT Header */
+#header {
+  /* background: url(/public/devotion.jpg); */
+  background-size: cover;
+  background-position: center;
+}
 .header-container {
-  padding: 5rem 0;
+  padding: 7.5rem 0;
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;

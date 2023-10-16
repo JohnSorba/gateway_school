@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     title: "How can I contact the school administration?",
-    text: "You can reach our school administration by phone at +1-123-456-7890 or via email at admin@schoolname.edu.",
+    text: "You can reach our school administration by phone at +232-34-243599 or via email at admin@gateway.edu.",
   },
   {
     title: "Are there extracurricular activities for students?",

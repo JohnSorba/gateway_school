@@ -15,10 +15,10 @@ import AccApp from "../Accordion/AccApp";
 function Contact() {
   return (
     <div>
-      <Navbar />
       <div id="contact-page">
         {/* Banner Image */}
         <section id="header">
+          <Navbar />
           <div className="header-container">
             <h1>Contact US</h1>
           </div>
