@@ -47,7 +47,7 @@
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
-  cursor: pointer;
+  cursor: zoom-in;
   transition: 0.2s all;
 }
 

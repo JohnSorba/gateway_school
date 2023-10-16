@@ -11,16 +11,14 @@ function ImageSlider() {
     {
       url: "/assembly.jpg",
       title: "Boat",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut viverra enim. Donec volutpat, orci vitae tempor pharetra, turpis augue vehicula nulla, nec accumsan risus nisl vel orci. Duis diam augue, vulputate eu tincidunt id, pellentesque quis tellus. Maecenas eu sagittis dolor, placerat sollicitudin dui. ",
+      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     },
     { url: "/assemblyKid.jpg", title: "Boat" },
-    { url: "/Augustine_Family.jpg", title: "Boat" },
     { url: "/uncAug.jpg", title: "Boat" },
     { url: "/gateway_topview.jpg", title: "Boat" },
     { url: "/gateway_frontview.jpg", title: "Boat" },
     { url: "/busKids.jpg", title: "Boat" },
-    { url: "/geometry_blackboard.jpg", title: "Boat" },
+    { url: "/devotion.jpg", title: "Boat" },
   ];
 
   const description = slides[currentIndex].description;

@@ -102,6 +102,13 @@ function News() {
           slidesToScroll: 1,
         },
       },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
     ],
   };
 
@@ -137,9 +144,12 @@ function News() {
             <Slider {...announcementSettings}>
               {isAnnouncement &&
                 content.Announcement.map((announcement, index) => (
-                  <div className="announcement-details">
+                  <div
+                    className="announcement-details"
+                    key={announcement.title}
+                  >
                     <p>
-                      <time datetime="2023-10-15T10:00:00">
+                      <time dateTime="2023-10-15T10:00:00">
                         {announcement.date}
                       </time>
                     </p>
@@ -156,9 +166,9 @@ function News() {
             <Slider {...announcementSettings}>
               {isEvent &&
                 content.Event.map((events, index) => (
-                  <div className="event-detail">
+                  <div className="event-detail" key={events.title}>
                     <p>
-                      <time datetime="2023-10-15T10:00:00">{events.date}</time>
+                      <time dateTime="2023-10-15T10:00:00">{events.date}</time>
                     </p>
                     <h2>{events.title}</h2>
                     <p>{events.summary}</p>
@@ -176,9 +186,9 @@ function News() {
           <div className="latest-news-content">
             <Slider {...settings}>
               {news.map((news) => (
-                <div className="news">
+                <div className="news" key={news.title}>
                   <p>
-                    <time datetime="2023-10-15T10:00:00">{news.date}</time>
+                    <time dateTime="2023-10-15T10:00:00">{news.date}</time>
                   </p>
                   <h2>{news.title}</h2>
                   <p>{news.summary}</p>

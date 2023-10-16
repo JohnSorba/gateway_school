@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./StaffSlide.css";
 
 const profileData = [
@@ -44,14 +44,14 @@ function StaffSlide() {
         </h3>
         <div className="staff-container-flex">
           {profileData.map((profile) => (
-            <figure>
+            <figure key={profile.title}>
               <img src={profile.image} alt={profile.title} />
               <figcaption>
                 <p>{profile.title}</p>
                 <p>{profile.subject}</p>
-                <NavLink to={profile.profileLink} className="figcaption-link">
+                <Link to={profile.profileLink} className="figcaption-link">
                   Learn More
-                </NavLink>
+                </Link>
               </figcaption>
             </figure>
           ))}
@@ -77,10 +77,10 @@ function StaffSlide() {
               development of our students. Their unwavering dedication is the
               driving force behind our school's success, fostering a culture of
               innovation, growth, and academic achievement.
-              <NavLink to="/about/headteacher_speech" className="read-more">
+              <Link to="/about/headteacher_speech" className="read-more">
                 {" "}
                 Read More...
-              </NavLink>
+              </Link>
             </blockquote>
           </article>
         </div>

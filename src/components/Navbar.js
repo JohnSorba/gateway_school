@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 import {
   ChevronDownIcon,
   Bars3Icon,
@@ -66,7 +67,6 @@ function Navbar() {
             {/* ABOUT US DROPDOWN LINK */}
             <li>
               <NavLink
-                to="/about"
                 className="nav-link dropdown-nav-link"
                 onClick={() => toggleDropdown(0)}
               >
@@ -78,22 +78,22 @@ function Navbar() {
                 className={`dropdown ${dropdownOpen[0] ? "open" : ""}`}
               >
                 <li>
-                  <NavLink to="/our_story" className="dropdown-link">
+                  <NavLink to="/about/our_story" className="dropdown-link">
                     About Us
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/values" className="dropdown-link">
+                  <NavLink to="/about/values" className="dropdown-link">
                     School Values
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/admin" className="dropdown-link">
+                  <NavLink to="/about/admin" className="dropdown-link">
                     Administration and Staff
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/gallery" className="dropdown-link">
+                  <NavLink to="/about/gallery" className="dropdown-link">
                     School Gallery
                   </NavLink>
                 </li>
@@ -103,7 +103,6 @@ function Navbar() {
             {/* PARENT DROPDOWN LINK */}
             <li>
               <NavLink
-                to="/parents"
                 className="nav-link dropdown-nav-link"
                 onClick={() => toggleDropdown(1)}
               >
@@ -125,7 +124,6 @@ function Navbar() {
             {/* ACADEMIC DROPDOWN LINK */}
             <li>
               <NavLink
-                to="/activities"
                 className="nav-link dropdown-nav-link"
                 onClick={() => toggleDropdown(2)}
               >
@@ -137,22 +135,22 @@ function Navbar() {
                 className={`dropdown ${dropdownOpen[2] ? "open" : ""}`}
               >
                 <li>
-                  <NavLink to="/gps" className="dropdown-link">
+                  <NavLink to="/academic/daycare" className="dropdown-link">
                     Daycare
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/gps" className="dropdown-link">
+                  <NavLink to="/academic/preschool" className="dropdown-link">
                     Nursery
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/gps" className="dropdown-link">
+                  <NavLink to="/academic/gps" className="dropdown-link">
                     Gateway Pre-School
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/ghs" className="dropdown-link">
+                  <NavLink to="/academic/ghs" className="dropdown-link">
                     Gateway High School
                   </NavLink>
                 </li>

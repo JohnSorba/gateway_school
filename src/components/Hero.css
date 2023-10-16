@@ -203,7 +203,7 @@
 
 @media (max-width: 992px) {
   .hero-section {
-    padding: 0 2rem;
+    padding: 0 3rem;
   }
   .hero-container {
     grid-template-columns: 1fr;
@@ -243,6 +243,6 @@
   }
 
   .heading .school-title {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
 }

@@ -1,11 +1,11 @@
 #news-section {
-  padding: 3rem 1rem;
+  padding: 3rem 2rem;
 }
 
 .news-container {
   display: grid;
-  grid-template-columns: 70% 30%;
-  gap: 2rem;
+  grid-template-columns: 70% 28%;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -125,4 +125,7 @@ header > h1 {
 }
 
 @media (max-width: 575px) {
+  #news-section {
+    padding: 3rem 1rem;
+  }
 }

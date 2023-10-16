@@ -13,15 +13,17 @@ function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(null);
 
   const images = [
-    "/assemblyKid.jpg",
-    "/Augustine_Family.jpg",
     "/assembly.jpg",
+    "/devotion.jpg",
+    "/assemblyKid.jpg",
     "/uncAug.jpg",
     "/busKids.jpg",
     "/gateway_topview.jpg",
-    "/assembly.jpg",
-    "/assemblyKid.jpg",
-    "/busKids.jpg",
+    "/backyard3.jpg",
+    "/devotion2.jpg",
+    "/teachers.jpg",
+    "/awards_ceremony.jpg",
+    "/awards_ceremony2.jpg",
   ];
 
   // Open the Modal and set the current image

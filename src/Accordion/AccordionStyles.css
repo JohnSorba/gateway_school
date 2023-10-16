@@ -1,7 +1,7 @@
 .accordion {
   margin: 0rem auto;
   padding: 4% 0 7%;
-  background: var(--gradient-bg);
+  /* background: var(--gradient-bg); */
 }
 
 .accordion h2 {
@@ -26,7 +26,7 @@
   border-top: 4px solid #fff;
   border-bottom: 4px solid #fff;
 
-  max-height: 75px;
+  max-height: auto;
   transition: max-height 0.3s ease-in-out;
 
   display: grid;
@@ -39,12 +39,12 @@
 .number {
   font-size: 24px;
   font-weight: 500;
-  color: #ced4da;
+  color: var(--complementary-accent);
 }
 
 .title,
 .icon {
-  font-size: 24px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -53,11 +53,11 @@
   padding-bottom: 16px;
   line-height: 1.6;
   opacity: 0;
-  transition: opacity 2.9s ease-in;
+  transition: opacity 4s ease-in;
 }
 
 .content-box ul {
-  color: #868e96;
+  color: var(--complementary-accent);
   margin-left: 16px;
   margin-top: 16px;
 
@@ -72,12 +72,12 @@
 }
 
 .open {
-  border-top: 4px solid var(--primary-color);
+  border-top: 4px solid var(--complementary-accent);
 }
 
 .open .number,
 .open .text {
-  color: var(--primary-color);
+  color: var(--complementary-accent);
 }
 
 .open .content-box {
@@ -91,12 +91,12 @@
   }
 
   .number {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
 
   .title,
   .icon {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
   }
 }

@@ -87,17 +87,17 @@ function About_Section() {
         <div className="stats-container">
           <div className="stats">
             <LightBulbIcon className="h-24 w-24" />
-            <span>250</span>
+            <span>400+</span>
             <p>Students</p>
           </div>
           <div className="stats">
             <TrophyIcon className="h-24 w-24" />
-            <span>2</span>
-            <p>Awards</p>
+            <span>1</span>
+            <p>Award</p>
           </div>
           <div className="stats">
             <UserIcon className="h-24 w-24" />
-            <span>17</span>
+            <span>26</span>
             <p>Teachers</p>
           </div>
         </div>
