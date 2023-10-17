@@ -26,12 +26,6 @@ function HomePage({ isOpen, isDropdownOpen, toggleDropdown, toggleNavbar }) {
       <Gallery />
 
       <ContactUs />
-      <Footer
-        isOpen={isOpen}
-        toggleNavbar={toggleNavbar}
-        isDropdownOpen={isDropdownOpen}
-        toggleDropdown={toggleDropdown}
-      />
     </div>
   );
 }

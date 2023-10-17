@@ -83,7 +83,7 @@ function Contact() {
               width="600"
               height="450"
               className="map"
-              allowFullscreen=""
+              allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
@@ -92,7 +92,6 @@ function Contact() {
           {/* Social Media Links */}
         </section>
       </div>
-      <Footer />
     </div>
   );
 }

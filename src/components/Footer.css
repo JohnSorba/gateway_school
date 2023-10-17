@@ -4,6 +4,7 @@
   background-color: black;
   background-color: var(--main-bg-color);
   background-color: var(--primary-darkBlue);
+  background-color: var(--main-bg-dark);
   /* background: var(--gradient-bg); */
   /* background: var(--section-bg); */
   padding: 5rem 2rem;

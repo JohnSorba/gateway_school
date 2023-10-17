@@ -78,17 +78,22 @@ function Navbar() {
                 className={`dropdown ${dropdownOpen[0] ? "open" : ""}`}
               >
                 <li>
-                  <NavLink to="/about/our_story" className="dropdown-link">
+                  <NavLink to="/about" className="dropdown-link">
                     About Us
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/about/values" className="dropdown-link">
-                    School Values
+                  <NavLink to="/about/history" className="dropdown-link">
+                    Our Story
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/about/admin" className="dropdown-link">
+                  <NavLink to="/about/mission" className="dropdown-link">
+                    Mission and Vision
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink to="/about/administration" className="dropdown-link">
                     Administration and Staff
                   </NavLink>
                 </li>
@@ -115,7 +120,7 @@ function Navbar() {
               >
                 <li>
                   <NavLink to="curriculum" className="dropdown-link">
-                    Curriculum
+                    Calendar
                   </NavLink>
                 </li>
               </ul>

@@ -8,26 +8,39 @@ import Academic from "../pages/Academic";
 import Events from "../pages/Events";
 import Contact from "../pages/Contact";
 
+// ABOUT SUB-PAGES
+import AboutContent from "../pages/AboutContent";
+import AboutMission from "../pages/AboutMission";
+import AboutHistory from "../pages/AboutHistory";
+import AboutAdministration from "../pages/AboutAdministration";
+import AboutGallery from "../pages/AboutGallery";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+
 function AppRouter() {
   return (
     <div>
       {" "}
       <BrowserRouter>
+        {/* <Navbar /> */}
         {/* NAVIGATION */}
         <Routes>
-          <Route path="/" Component={HomePage} />
-          <Route path="/about">
-            <Route path="/about/our_story" Component={AboutPage} />
-            <Route path="/about/values" element={<AboutPage />} />
-            <Route path="/about/admin" element={<AboutPage />} />
-            <Route path="/about/gallery" element={<AboutPage />} />
-            <Route path="/about/headteacher_speech" element={<AboutPage />} />
+          <Route exact path="/" element={<HomePage />} />
+
+          {/* ABOUT PAGE ROUTES */}
+          <Route path="about" element={<AboutPage />}>
+            <Route index element={<AboutContent />} />
+            <Route path="history" element={<AboutHistory />} />
+            <Route path="mission" element={<AboutMission />} />
+            <Route path="administration" element={<AboutAdministration />} />
+            <Route path="gallery" element={<AboutGallery />} />
           </Route>
           <Route path="/academic" element={<Academic />} />
           <Route path="/parent" />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );

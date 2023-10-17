@@ -1,22 +1,48 @@
-import { useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useState } from "react";
+import { Outlet, Link } from "react-router-dom";
+import "./AboutPage.css";
+import { AboutPageData } from "../data/AboutPageData";
+import Navbar from "../components/Navbar";
 
 function AboutPage() {
-  const { section } = useParams();
+  const [curPageIndex, setCurPageIndex] = useState(0);
 
-  useEffect(() => {
-    // Scroll to the section based on the 'section' variable
-
-    const sectionElement = document.getElementById(section);
-    if (sectionElement) {
-      sectionElement.scrollIntoView({ behavior: "smooth" });
-    }
-  }, [section]);
+  const getPageIndex = (index) => {
+    setCurPageIndex(index);
+  };
 
   return (
-    <div>
-      <h1>Welcome to the About Us page</h1>
-      <h1 className="text-2xl font-semibold">COMING SOON!</h1>
+    <div id="about">
+      <header className="header">
+        <Navbar />
+        <div className="header-container">
+          <h2>{AboutPageData[curPageIndex].title}</h2>
+        </div>
+      </header>
+
+      <div className="aboutpage-container">
+        <main>
+          <Outlet />
+        </main>
+        <section id="sidebar">
+          <article className="sidebar-container">
+            <h3>About Gateway</h3>
+            <ul className="list">
+              {AboutPageData.map((item, index) => (
+                <li key={index}>
+                  <Link
+                    to={item.path}
+                    className="link"
+                    onClick={() => getPageIndex(index)}
+                  >
+                    {item.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </article>
+        </section>
+      </div>
     </div>
   );
 }
