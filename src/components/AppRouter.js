@@ -1,5 +1,4 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 
 // SITE PAGES
 import HomePage from "../pages/HomePage";
