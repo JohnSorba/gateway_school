@@ -1,0 +1,40 @@
+.about-content {
+  padding: 0;
+}
+
+.about-content header {
+  margin-bottom: 2rem;
+}
+
+.about-content img {
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 2rem;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.about-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.about-content p {
+  line-height: 1.6;
+}
+
+.about-text {
+  border-bottom: 2px solid var(--subtle-background);
+}
+.about-content article {
+  margin-bottom: 2rem;
+}
+
+em {
+  color: var(--primary-darkBlue);
+}

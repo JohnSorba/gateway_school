@@ -8,10 +8,10 @@ import {
   UserIcon,
 } from "@heroicons/react/24/outline";
 import "./AboutUs.css";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import About_Slider from "./About_Slider";
 
-function About_Section() {
+function About_Section({ curPageIndex, getPageIndex }) {
   return (
     <section className="about-section">
       <div className="about-container">
@@ -28,7 +28,12 @@ function About_Section() {
               apart as a catalyst for lifelong learning.
             </p>
             <button className="btn">
-              <NavLink to="/about">Our Story</NavLink>
+              <Link
+                to="/about"
+                // onClick={() => getPageIndex(curPageIndex)}
+              >
+                Our Story
+              </Link>
             </button>
           </div>
           <div>

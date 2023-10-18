@@ -1,0 +1,20 @@
+.leadership h1 {
+  font-size: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--subtle-background);
+  margin-bottom: 1rem;
+}
+
+.profile-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem 1rem;
+}
+
+.profile-container img {
+  height: 250px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}

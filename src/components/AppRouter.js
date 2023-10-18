@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react";
 
 // SITE PAGES
 import HomePage from "../pages/HomePage";
@@ -17,17 +18,40 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 
 function AppRouter() {
+  const [curPageIndex, setCurPageIndex] = useState(0);
+  const getPageIndex = (index) => {
+    setCurPageIndex(index);
+  };
+
   return (
     <div>
       {" "}
       <BrowserRouter>
-        {/* <Navbar /> */}
+        <Navbar curPageIndex={curPageIndex} getPageIndex={getPageIndex} />
         {/* NAVIGATION */}
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
+          <Route
+            exact
+            path="/"
+            element={
+              <HomePage
+                curPageIndex={curPageIndex}
+                getPageIndex={getPageIndex}
+              />
+            }
+          />
 
           {/* ABOUT PAGE ROUTES */}
-          <Route path="about" element={<AboutPage />}>
+          <Route
+            path="about"
+            element={
+              <AboutPage
+                curPageIndex={curPageIndex}
+                setCurPageIndex={setCurPageIndex}
+                getPageIndex={getPageIndex}
+              />
+            }
+          >
             <Route index element={<AboutContent />} />
             <Route path="history" element={<AboutHistory />} />
             <Route path="mission" element={<AboutMission />} />

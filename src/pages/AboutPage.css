@@ -27,38 +27,13 @@
 #about .aboutpage-container {
   display: grid;
   grid-template-columns: 1fr 300px;
-  gap: 1rem;
+  gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .aboutpage-container main {
-  padding: 4rem 0;
-}
-
-#aboutus {
-  background-color: black;
-  color: white;
-}
-#values {
-  background-color: white;
-  color: black;
-}
-#admin {
-  background-color: black;
-  color: white;
-}
-#history-and-heritage {
-  background-color: white;
-  color: black;
-}
-#accreditation {
-  background-color: black;
-  color: white;
-}
-#image-gallery {
-  background-color: white;
-  color: black;
+  padding: 2rem 1rem;
 }
 
 /* SIDEBAR */
@@ -77,11 +52,17 @@
 .sidebar-container .link {
   display: inline-block;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0.75rem 1rem;
   border-bottom: 2px solid var(--subtle-background);
 }
 
 .sidebar-container .link:hover {
   background-color: var(--subtle-background);
+}
+
+.sidebar-container .link.active {
+  border-left: 4px solid var(--main-bg-dark);
+  padding-left: 1.5rem;
+  transition: 0.3s all;
 }

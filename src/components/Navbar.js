@@ -6,8 +6,10 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import "./Navbar.css";
+import { AboutNavDropdownData } from "../data/AboutPageData";
+import { AcademicNavDropdownData } from "../data/AboutPageData";
 
-function Navbar() {
+function Navbar({ getPageIndex }) {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState([false, false]);
   const [isSticky, setIsSticky] = useState(false);
@@ -76,31 +78,17 @@ function Navbar() {
                 id="dropdown1"
                 className={`dropdown ${dropdownOpen[0] ? "open" : ""}`}
               >
-                <li>
-                  <NavLink to="/about" className="dropdown-link">
-                    About Us
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/about/history" className="dropdown-link">
-                    Our Story
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/about/mission" className="dropdown-link">
-                    Mission and Vision
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/about/administration" className="dropdown-link">
-                    Administration and Staff
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/about/gallery" className="dropdown-link">
-                    School Gallery
-                  </NavLink>
-                </li>
+                {AboutNavDropdownData.map((data, index) => (
+                  <li key={index}>
+                    <NavLink
+                      to={data.url}
+                      className={data.style}
+                      onClick={() => getPageIndex(index)}
+                    >
+                      {data.title}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             </li>
 
@@ -138,26 +126,17 @@ function Navbar() {
                 id="dropdown3"
                 className={`dropdown ${dropdownOpen[2] ? "open" : ""}`}
               >
-                <li>
-                  <NavLink to="/academic/daycare" className="dropdown-link">
-                    Daycare
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/academic/preschool" className="dropdown-link">
-                    Nursery
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/academic/gps" className="dropdown-link">
-                    Gateway Pre-School
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/academic/ghs" className="dropdown-link">
-                    Gateway High School
-                  </NavLink>
-                </li>
+                {AcademicNavDropdownData.map((data, index) => (
+                  <li key={index}>
+                    <NavLink
+                      to={data.url}
+                      className={data.style}
+                      onClick={() => getPageIndex(index)}
+                    >
+                      {data.title}
+                    </NavLink>
+                  </li>
+                ))}
               </ul>
             </li>
 

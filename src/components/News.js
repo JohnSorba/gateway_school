@@ -125,7 +125,7 @@ function News() {
     <section id="news-section">
       <div className="news-container">
         <div className="events">
-          <header>
+          <header className="news-header">
             <h1
               onClick={openAnnouncement}
               className={`${isAnnouncement ? "announcement-open" : ""}`}

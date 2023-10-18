@@ -1,0 +1,27 @@
+.mission article {
+  margin-bottom: 4rem;
+}
+
+.mission h1 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--subtle-background);
+}
+
+.core-values ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mission .core-values li {
+  gap: 0.5rem;
+  border-bottom: 2px solid var(--subtle-background);
+  padding-bottom: 1.25rem;
+}
+
+.core-values li span {
+  color: var(--primary-bg-dark);
+  font-size: 1.5rem;
+}

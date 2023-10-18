@@ -1,5 +1,12 @@
+import GalleryModal from "../components/GalleryModal";
+import { images } from "../data/AboutPageData";
+
 function AboutGallery() {
-  return <div>About Gallery Page</div>;
+  return (
+    <section>
+      <GalleryModal images={images} />
+    </section>
+  );
 }
 
 export default AboutGallery;

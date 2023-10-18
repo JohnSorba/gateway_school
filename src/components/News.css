@@ -42,7 +42,7 @@
   border-top-right-radius: 5px;
 }
 
-header > h1 {
+.news-header > h1 {
   color: #000;
   /* font-size: 1.2rem; */
   font-weight: 600;

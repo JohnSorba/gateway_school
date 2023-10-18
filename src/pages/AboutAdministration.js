@@ -1,5 +1,25 @@
+import { profileData } from "../data/AboutPageData";
+import "./AboutAdministration.css";
+
 function AboutAdministration() {
-  return <div>Administration Page</div>;
+  return (
+    <section>
+      <article className="leadership">
+        <h1>Leadership</h1>
+        <div className="profile-container">
+          {profileData.map((data, index) => (
+            <figure key={index}>
+              <img src={data.image} alt={data.title} />
+              <figcaption>
+                <span>{data.title}</span>, {data.role}
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </article>
+      <article className="staff"></article>
+    </section>
+  );
 }
 
 export default AboutAdministration;

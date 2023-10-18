@@ -70,6 +70,7 @@
 }
 
 .nav-links .nav-link {
+  color: var(--text-white);
   font-size: 1rem;
   font-weight: 500;
   /* color: #fff; */

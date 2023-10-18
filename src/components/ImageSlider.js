@@ -52,7 +52,7 @@ function ImageSlider() {
   return (
     <div className="sliderStyles">
       <div className="slideStyles" style={slideStyles}>
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero description={description} />
         <div className="dot-container">
           {slides.map((_, index) => (

@@ -4,17 +4,11 @@ import "./AboutPage.css";
 import { AboutPageData } from "../data/AboutPageData";
 import Navbar from "../components/Navbar";
 
-function AboutPage() {
-  const [curPageIndex, setCurPageIndex] = useState(0);
-
-  const getPageIndex = (index) => {
-    setCurPageIndex(index);
-  };
-
+function AboutPage({ curPageIndex, getPageIndex }) {
   return (
     <div id="about">
       <header className="header">
-        <Navbar />
+        {/* <Navbar /> */}
         <div className="header-container">
           <h2>{AboutPageData[curPageIndex].title}</h2>
         </div>
@@ -32,7 +26,7 @@ function AboutPage() {
                 <li key={index}>
                   <Link
                     to={item.path}
-                    className="link"
+                    className={`link ${curPageIndex === index ? "active" : ""}`}
                     onClick={() => getPageIndex(index)}
                   >
                     {item.title}

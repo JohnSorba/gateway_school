@@ -1,36 +1,6 @@
 import { Link } from "react-router-dom";
+import { profileData } from "../data/AboutPageData";
 import "./StaffSlide.css";
-
-const profileData = [
-  {
-    image:
-      "https://media.istockphoto.com/id/1476170969/photo/portrait-of-young-man-ready-for-job-business-concept.webp?b=1&s=612x612&w=0&k=20&c=A87DXDjXjoyJWkWIlLfhJYsjqKtTyuvhOg14QY4SeMQ=",
-    title: "John Doe",
-    subject: "Mathematics Teacher",
-    profileLink: "/profiles/john-doe",
-  },
-  {
-    image:
-      "https://media.istockphoto.com/id/938709362/photo/portrait-of-a-girl.webp?b=1&s=612x612&w=0&k=20&c=fksVRgTE7PKY24Vq-aovymiZu6lBoyFmkGujM6nIgq4=",
-    title: "Jane Smith",
-    subject: "English Teacher",
-    profileLink: "/profiles/jane-smith",
-  },
-  {
-    image:
-      "https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.webp?b=1&s=612x612&w=0&k=20&c=MsKXmwf7TDRdKRn_lHohhmD5rvVvnGs9ry0xl6CrMT4=",
-    title: "Michael Johnson",
-    subject: "Social Studies Teacher",
-    profileLink: "/profiles/michael-johnson",
-  },
-  {
-    image:
-      "https://media.istockphoto.com/id/1351285381/photo/happy-young-african-american-woman-looking-at-camera.webp?b=1&s=612x612&w=0&k=20&c=MObQK8ZpTF2oL6a0mMlG2sJR-6aFMet2zz10WPUkgkE=",
-    title: "Emily Brown",
-    subject: "Biology Teacher",
-    profileLink: "/profiles/emily-brown",
-  },
-];
 
 function StaffSlide() {
   return (

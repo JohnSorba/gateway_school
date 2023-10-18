@@ -64,6 +64,10 @@ h3 {
   font-family: "Inter", sans-serif;
 }
 
+p {
+  /* color: rgb(70, 70, 70); */
+}
+
 .main-header {
   width: 100%;
   color: #fff;

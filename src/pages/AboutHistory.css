@@ -1,0 +1,36 @@
+.history h1 {
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--subtle-background);
+}
+.history h2 {
+  font-size: 1.5rem;
+}
+.history-header {
+  margin-bottom: 4rem;
+}
+.history p {
+  color: rgb(70, 70, 70);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.history article {
+  margin-bottom: 4rem;
+}
+
+.awards-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.awards-container img {
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+}
