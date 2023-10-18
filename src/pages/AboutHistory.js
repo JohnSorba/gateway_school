@@ -55,7 +55,9 @@ function AboutHistory() {
             The school's journey to greater heights continued with the
             involvement of Augustine Moinina Hinga, the son of the co-founders.
             His dedication and contributions further enriched the educational
-            experience.
+            experience. His rich experience in Banking and Marketing propelled
+            the institution further, which saw it attain a strong footing in the
+            educational landscape in Sierra Leone.
           </p>
         </article>
         <article>
@@ -71,14 +73,15 @@ function AboutHistory() {
             <img src="/awards_ceremony2.jpg" alt="award ceremony 2" />
           </div>
         </article>
-        <article>
+        <article className="future">
           <h1>2023 - A Growing Community</h1>
-          <p>
+          <p className="pb-8">
             Today, Gateway School proudly serves over 400 pupils and employs a
             dedicated team of over 25 staff members. The school's legacy of
             resilience, excellence, and commitment to education continues to
             flourish.
           </p>
+          <img src="/devotion.jpg" alt="Devotion" />
         </article>
       </section>
     </section>

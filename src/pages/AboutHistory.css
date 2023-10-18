@@ -27,7 +27,8 @@
   margin-top: 2rem;
 }
 
-.awards-container img {
+.awards-container img,
+.future img {
   height: 450px;
   width: 100%;
   object-fit: cover;
