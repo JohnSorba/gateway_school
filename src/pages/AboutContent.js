@@ -6,7 +6,17 @@ function AboutContent() {
     <main className="about-content">
       <header className="heading">
         <h1>Welcome to Gateway School</h1>
-        <img src="/gateway_frontview.jpg" alt="gateway school" />
+        <figure>
+          <img src="/gateway_frontview.jpg" alt="gateway school" />
+          <figcaption>
+            <blockquote>
+              <q className="italic">
+                A front view of Gateway Daycare, Nursery, Preparatory and High
+                School
+              </q>
+            </blockquote>
+          </figcaption>
+        </figure>
         <p>
           At Gateway School, we've been dedicated to excellence in education
           since our founding in 1990. Located in the vibrant city of Freetown,
