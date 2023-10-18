@@ -2,7 +2,7 @@ import "./AboutHistory.css";
 
 function AboutHistory() {
   return (
-    <main className="history">
+    <section className="history">
       <header className="history-header">
         <h1>1990 - Foundation</h1>
         <p>
@@ -81,7 +81,7 @@ function AboutHistory() {
           </p>
         </article>
       </section>
-    </main>
+    </section>
   );
 }
 

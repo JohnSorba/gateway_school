@@ -3,7 +3,7 @@ import "./AboutContent.css";
 
 function AboutContent() {
   return (
-    <main className="about-content">
+    <section className="about-content">
       <header className="heading">
         <h1>Welcome to Gateway School</h1>
         <figure>
@@ -84,7 +84,7 @@ function AboutContent() {
           </p>
         </article>
       </div>
-    </main>
+    </section>
   );
 }
 

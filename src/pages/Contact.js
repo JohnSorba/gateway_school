@@ -17,7 +17,6 @@ function Contact() {
       <div id="contact-page">
         {/* Banner Image */}
         <section id="header">
-          <Navbar />
           <div className="header-container">
             <h1>Contact US</h1>
           </div>

@@ -54,13 +54,13 @@ function Navbar({ getPageIndex }) {
         </h1>
 
         <div className={`menu ${isOpen ? "show" : ""}`}>
-          <h1 className="navbar-logo">
+          <h1 className="navbar-logo" onClick={toggleNavbar}>
             {" "}
             <NavLink to="/">Gateway</NavLink>
           </h1>
           <ul className="nav-links">
             <li>
-              <NavLink to="/" className="nav-link">
+              <NavLink to="/" className="nav-link" onClick={toggleNavbar}>
                 Home
               </NavLink>
             </li>
@@ -79,7 +79,7 @@ function Navbar({ getPageIndex }) {
                 className={`dropdown ${dropdownOpen[0] ? "open" : ""}`}
               >
                 {AboutNavDropdownData.map((data, index) => (
-                  <li key={index}>
+                  <li key={index} onClick={toggleNavbar}>
                     <NavLink
                       to={data.url}
                       className={data.style}
@@ -127,7 +127,7 @@ function Navbar({ getPageIndex }) {
                 className={`dropdown ${dropdownOpen[2] ? "open" : ""}`}
               >
                 {AcademicNavDropdownData.map((data, index) => (
-                  <li key={index}>
+                  <li key={index} onClick={toggleNavbar}>
                     <NavLink
                       to={data.url}
                       className={data.style}
@@ -141,14 +141,14 @@ function Navbar({ getPageIndex }) {
             </li>
 
             {/* EVENTS/NEWS DROPDOWN LINK */}
-            <li>
+            <li onClick={toggleNavbar}>
               <NavLink to="/events" className="nav-link">
                 Events/News
               </NavLink>
             </li>
 
             {/* CONTACT DROPDOWN LINK */}
-            <li>
+            <li onClick={toggleNavbar}>
               <NavLink to="/contact" className="nav-link">
                 Contact Us
               </NavLink>
