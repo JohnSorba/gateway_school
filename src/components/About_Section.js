@@ -27,14 +27,14 @@ function About_Section({ curPageIndex, getPageIndex }) {
               holistic education, innovation, and community engagement sets us
               apart as a catalyst for lifelong learning.
             </p>
-            <button className="btn">
-              <Link
-                to="/about"
-                // onClick={() => getPageIndex(curPageIndex)}
-              >
-                Our Story
-              </Link>
-            </button>
+
+            <Link
+              to="/about"
+              className="btn"
+              // onClick={() => getPageIndex(curPageIndex)}
+            >
+              Our Story
+            </Link>
           </div>
           <div>
             <h1>Mission</h1>

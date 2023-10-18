@@ -151,10 +151,6 @@ li:hover > .dropdown {
 }
 
 @media (max-width: 1024px) {
-  .navbar {
-    background-color: var(--primary-darkBlue);
-  }
-
   .navbar-logo {
     display: block;
     color: var(--main-bg-color);
@@ -179,9 +175,11 @@ li:hover > .dropdown {
     overflow-y: scroll;
     padding: 1rem 1.5rem;
 
+    /* color: var(--text-white); */
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background: var(--subtle-background);
+    /* background: var(--main-bg-dark); */
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
     transform: translateX(-100%);
     transition: 0.3s ease-in-out;
@@ -213,7 +211,7 @@ li:hover > .dropdown {
   .nav-links .nav-link {
     display: flex;
     justify-content: space-between;
-    color: var(--primary-darkBlue);
+    color: var(--main-bg-dark);
     width: 100%;
     font-size: 1.1rem;
     margin: 0;

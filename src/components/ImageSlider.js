@@ -3,38 +3,25 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import "./ImageSlider.css";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
+import { heroSlides } from "../data/AboutPageData";
 
 function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const slides = [
-    {
-      url: "/assembly.jpg",
-      title: "Boat",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
-    },
-    { url: "/assemblyKid.jpg", title: "Boat" },
-    { url: "/uncAug.jpg", title: "Boat" },
-    { url: "/gateway_topview.jpg", title: "Boat" },
-    { url: "/gateway_frontview.jpg", title: "Boat" },
-    { url: "/busKids.jpg", title: "Boat" },
-    { url: "/devotion.jpg", title: "Boat" },
-  ];
-
-  const description = slides[currentIndex].description;
+  const description = heroSlides[currentIndex].description;
 
   const slideStyles = {
-    backgroundImage: `url(${slides[currentIndex].url})`,
+    backgroundImage: `url(${heroSlides[currentIndex].url})`,
   };
 
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? heroSlides.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
+    const isLastSlide = currentIndex === heroSlides.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
@@ -55,7 +42,7 @@ function ImageSlider() {
         {/* <Navbar /> */}
         <Hero description={description} />
         <div className="dot-container">
-          {slides.map((_, index) => (
+          {heroSlides.map((_, index) => (
             <div
               className={`dotStyle ${currentIndex === index ? "dot" : ""}`}
               key={index}

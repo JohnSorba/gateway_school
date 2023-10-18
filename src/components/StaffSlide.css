@@ -174,16 +174,16 @@
     margin-bottom: 4rem;
   }
 
-  figure {
+  .staff-container-flex figure {
     margin-bottom: 1rem;
   }
 
-  figure img {
+  .staff-container-flex figure img {
     border-radius: 10px;
     margin-bottom: 1rem;
   }
 
-  figcaption {
+  .staff-container-flex figcaption {
     position: relative;
     color: #000;
     padding: 0;
@@ -192,11 +192,11 @@
     background-color: white;
   }
 
-  figcaption > * {
+  .staff-container-flex figcaption > * {
     margin-bottom: 0.15rem;
   }
 
-  figcaption p:nth-child(2) {
+  .staff-container-flex figcaption p:nth-child(2) {
     margin-bottom: 0.75rem;
   }
 

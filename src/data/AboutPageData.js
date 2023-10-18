@@ -123,3 +123,30 @@ export const images = [
   "/awards_ceremony.jpg",
   "/awards_ceremony2.jpg",
 ];
+
+// ABOUT SECTION SLIDESHOW IMAGES
+export const slides = [
+  {
+    url: "/assembly.jpg",
+    title: "Boat",
+  },
+  { url: "/assemblyKid.jpg", title: "Boat" },
+  { url: "/uncAug.jpg", title: "Boat" },
+  { url: "/gateway_topview.jpg", title: "Boat" },
+  { url: "/gateway_frontview.jpg", title: "Boat" },
+];
+
+// HERO CAROUSEL SLIDE
+export const heroSlides = [
+  {
+    url: "/assembly.jpg",
+    title: "Boat",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+  },
+  { url: "/assemblyKid.jpg", title: "Boat" },
+  { url: "/uncAug.jpg", title: "Boat" },
+  { url: "/gateway_topview.jpg", title: "Boat" },
+  { url: "/gateway_frontview.jpg", title: "Boat" },
+  { url: "/busKids.jpg", title: "Boat" },
+  { url: "/devotion.jpg", title: "Boat" },
+];

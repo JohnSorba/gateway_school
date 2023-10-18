@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 // SITE PAGES
 import HomePage from "../pages/HomePage";
@@ -22,6 +22,19 @@ function AppRouter() {
   const getPageIndex = (index) => {
     setCurPageIndex(index);
   };
+
+  useEffect(() => {
+    // Code to run on component mount
+    const savedIndex = localStorage.getItem("curPageIndex");
+    if (savedIndex !== null) {
+      setCurPageIndex(parseInt(savedIndex, 10));
+    }
+  }, []);
+
+  useEffect(() => {
+    // Code to run on component mount
+    localStorage.setItem("curPageIndex", curPageIndex);
+  }, [curPageIndex]);
 
   return (
     <div>

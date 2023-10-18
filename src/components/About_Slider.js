@@ -2,21 +2,10 @@ import { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import "./ImageSlider.css";
 import "./About_Slider.css";
+import { slides } from "../data/AboutPageData";
 
 function About_Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const slides = [
-    {
-      url: "/assembly.jpg",
-      title: "Boat",
-    },
-    { url: "/assemblyKid.jpg", title: "Boat" },
-    { url: "/Augustine_Family.jpg", title: "Boat" },
-    { url: "/uncAug.jpg", title: "Boat" },
-    { url: "/gateway_topview.jpg", title: "Boat" },
-    { url: "/gateway_frontview.jpg", title: "Boat" },
-  ];
 
   const slideStyles = {
     backgroundImage: `url(${slides[currentIndex].url})`,

@@ -52,10 +52,10 @@ function AboutHistory() {
         <article>
           <h1>Augustine Moinina Hinga Joins</h1>
           <p>
-            Augustine Moinina Hinga Joins The school's journey to greater
-            heights continued with the involvement of Augustine Moinina Hinga,
-            the son of the co-founders. His dedication and contributions further
-            enriched the educational experience.
+            The school's journey to greater heights continued with the
+            involvement of Augustine Moinina Hinga, the son of the co-founders.
+            His dedication and contributions further enriched the educational
+            experience.
           </p>
         </article>
         <article>
