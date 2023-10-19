@@ -19,22 +19,21 @@ import Footer from "./Footer";
 
 function AppRouter() {
   const [curPageIndex, setCurPageIndex] = useState(0);
+
   const getPageIndex = (index) => {
     setCurPageIndex(index);
   };
 
-  useEffect(() => {
-    // Code to run on component mount
-    const savedIndex = localStorage.getItem("curPageIndex");
-    if (savedIndex !== null) {
-      setCurPageIndex(parseInt(savedIndex, 10));
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedIndex = localStorage.getItem("curPageIndex");
+  //   if (savedIndex !== null) {
+  //     setCurPageIndex(parseInt(savedIndex, 10));
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    // Code to run on component mount
-    localStorage.setItem("curPageIndex", curPageIndex);
-  }, [curPageIndex]);
+  // useEffect(() => {
+  //   localStorage.setItem("curPageIndex", curPageIndex);
+  // }, [curPageIndex]);
 
   return (
     <div>
@@ -75,8 +74,9 @@ function AppRouter() {
           <Route path="/parent" />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/contact#faq" element={<Contact />} />
         </Routes>
-        <Footer />
+        <Footer getPageIndex={getPageIndex} />
       </BrowserRouter>
     </div>
   );

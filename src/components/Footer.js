@@ -1,16 +1,10 @@
-import { NavLink } from "react-router-dom";
-import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/24/outline";
-import {
-  FaBeer,
-  FaBible,
-  FaFacebook,
-  FaInstagram,
-  FaTwitter,
-} from "react-icons/fa";
-import { GiBeerStein } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { ChevronUpIcon } from "@heroicons/react/24/outline";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import "./Footer.css";
+import { AboutNavDropdownData } from "../data/AboutPageData";
 
-function Footer({ isOpen, setIsOpen, isDropdownOpen, toggleDropdown }) {
+function Footer({ getPageIndex }) {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -20,93 +14,85 @@ function Footer({ isOpen, setIsOpen, isDropdownOpen, toggleDropdown }) {
       <div className="footer-container">
         <article className="logo-col">
           <img src="/gateway_logo.png" alt="Gateway Logo" />
-          <p className="copyright">
-            <br /> Copyright &copy;
-            <span className="year">2023</span>
-            <br />
-            Gateway Pre School.
-            <br /> All rights reserved.
-          </p>
         </article>
+
+        {/* OUR SCHOOL LINKS */}
         <article>
-          <h3>Navigation</h3>
-          <ul
-            className={`footer-nav-links flex flex-col gap-4 ${
-              isOpen ? "open" : ""
-            }`}
-          >
+          <h3>Our School</h3>
+
+          <ul>
+            {AboutNavDropdownData.map((data, index) => (
+              <li key={index}>
+                <Link
+                  to={data.url}
+                  className="link"
+                  onClick={() => getPageIndex(index)}
+                >
+                  {data.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </article>
+
+        {/* PARENTS LINKS */}
+        <article>
+          <h3>Parents</h3>
+          <ul className="mb-8">
             <li>
-              <NavLink to="/" className="nav-link">
-                Home
-              </NavLink>
-            </li>
-            <li className={`relative`}>
-              <NavLink
-                to="/about"
-                className="nav-link flex items-center justify-between"
-                onClick={toggleDropdown}
-              >
-                <p>About Us</p>
-                <ChevronDownIcon className="h-4 w-4" />
-              </NavLink>
-              {isDropdownOpen && (
-                <ul className="footer-dropdown">
-                  <li>
-                    <NavLink to="/our_story" className="dropdown-nav-link">
-                      Our Story
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/values" className="dropdown-nav-link">
-                      School Values
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/admin" className="dropdown-nav-link">
-                      Administration and Staff
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/gallery" className="dropdown-nav-link">
-                      School Gallery
-                    </NavLink>
-                  </li>
-                </ul>
-              )}
-            </li>
-            <li className={`relative`}>
-              <NavLink
-                to="/parents"
-                className="nav-link flex items-center justify-between"
-                onClick={toggleDropdown}
-              >
-                Parents
-                <ChevronDownIcon className="h-4 w-4" />
-              </NavLink>
-              {isDropdownOpen && (
-                <ul className="footer-dropdown">
-                  <li>
-                    <NavLink to="curriculum" className="dropdown-nav-link">
-                      Curriculum
-                    </NavLink>
-                  </li>
-                </ul>
-              )}
+              <Link to="parents/curriculum" className="link">
+                Curriculum
+              </Link>
             </li>
             <li>
-              <NavLink to="/activities" className="nav-link">
-                Activities
-              </NavLink>
+              <Link to="parents/calendar" className="link">
+                Calendar
+              </Link>
             </li>
+          </ul>
+
+          <h3>Quick Links</h3>
+          <ul>
             <li>
-              <NavLink to="/events" className="nav-link">
+              <Link to="/events" className="link">
                 Events/News
-              </NavLink>
+              </Link>
             </li>
             <li>
-              <NavLink to="/contact" className="nav-link">
+              <Link to="/contact" className="link">
                 Contact Us
-              </NavLink>
+              </Link>
+            </li>
+            <li>
+              <Link to="/contact#faq" className="link">
+                FAQs
+              </Link>
+            </li>
+          </ul>
+        </article>
+
+        <article>
+          <h3>Academic</h3>
+          <ul>
+            <li>
+              <Link to="/academic/daycare" className="link">
+                Daycare
+              </Link>
+            </li>
+            <li>
+              <Link to="/academic/nursery" className="link">
+                Nursery
+              </Link>
+            </li>
+            <li>
+              <Link to="/academic/primary-school" className="link">
+                Primary
+              </Link>
+            </li>
+            <li>
+              <Link to="/academic/high-school" className="link">
+                High School
+              </Link>
             </li>
           </ul>
         </article>
@@ -133,17 +119,21 @@ function Footer({ isOpen, setIsOpen, isDropdownOpen, toggleDropdown }) {
             </address>
           </div>
         </article>
-        <article>
-          <h3>Follow & Share</h3>
-          <div className="social-links">
-            <FaFacebook size={32} />
-            <FaTwitter size={32} />
-            <FaInstagram size={32} />
-          </div>
-        </article>
       </div>
+      <article className="base">
+        <div className="copyright">
+          Gateway PreSchool &copy;
+          <span className="year">{new Date().getFullYear()}</span>. All rights
+          reserved.
+        </div>
+        <div className="social-links">
+          <FaFacebook size={24} />
+          <FaTwitter size={24} />
+          <FaInstagram size={24} />
+        </div>
+      </article>
       <div className="toTop text-center bg-blue-200" onClick={scrollToTop}>
-        <ChevronUpIcon className="h-12 w-12" />
+        <ChevronUpIcon className="h-8 w-8" />
       </div>
     </footer>
   );

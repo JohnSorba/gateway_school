@@ -2,9 +2,8 @@
   /* padding: 0 2rem; */
 }
 
-#header,
 #social-links {
-  background: var(--section-bg);
+  background: var(--subtle-background);
 }
 
 /* CONTACT Header */
@@ -22,11 +21,12 @@
 
 .header-container h1 {
   font-size: 2.5rem;
-  font-weight: 600;
+  font-weight: 500;
+  letter-spacing: -2px;
 }
 
 #contact-details {
-  padding: 5rem 2rem;
+  padding: 0rem 2rem 5rem;
 }
 
 .contact-details-container {
@@ -43,8 +43,17 @@
   flex-direction: column;
   justify-content: baseline;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   text-align: center;
+}
+
+.contact-details-container p {
+  font-size: 0.875rem;
+}
+
+.contact-details-container .text {
+  color: var(--main-bg-dark);
+  font-size: 1.2rem;
 }
 
 /* SOCIAL LINKS */
@@ -76,8 +85,8 @@
 
 /* FAQ */
 #faq {
-  padding: 5rem 1rem;
-  background: var(--section-bg);
+  padding: 5rem 1rem 5rem;
+  /* background: var(--section-bg); */
 }
 
 .faq-container {
@@ -87,21 +96,21 @@
 
 /* MAP SECTION */
 #google-map {
-  /* background: var(--gradient-bg); */
+  background: var(--main-bg-dark);
 }
 .map-container {
   display: grid;
   /* grid-template-columns: repeat(autofit, minmax(600px, 1fr)); */
-  grid-template-columns: 1.5fr 2.5fr;
+  grid-template-columns: 1fr;
 }
 
 .map-container h1 {
-  place-self: center;
   text-align: center;
   line-height: 1.1;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
-  color: var(--complementary-accent);
+  color: var(--text-white);
+  padding: 5rem 0;
 }
 
 .map {

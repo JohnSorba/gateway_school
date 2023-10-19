@@ -11,7 +11,11 @@ import "./AboutUs.css";
 import { Link } from "react-router-dom";
 import About_Slider from "./About_Slider";
 
-function About_Section({ curPageIndex, getPageIndex }) {
+function About_Section({ curPageIndex, setCurPageIndex, getPageIndex }) {
+  const goToPage = () => {
+    const index = curPageIndex;
+    return index;
+  };
   return (
     <section className="about-section">
       <div className="about-container">
@@ -29,9 +33,9 @@ function About_Section({ curPageIndex, getPageIndex }) {
             </p>
 
             <Link
-              to="/about"
+              to="/about/history"
               className="btn"
-              // onClick={() => getPageIndex(curPageIndex)}
+              onClick={() => goToPage()}
             >
               Our Story
             </Link>

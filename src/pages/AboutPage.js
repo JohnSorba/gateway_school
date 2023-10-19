@@ -16,6 +16,7 @@ function AboutPage({ curPageIndex, getPageIndex }) {
 
       <div className="aboutpage-container">
         <main>
+          {/* This Outlet displays the content of the linked component from the about-page sub-link */}
           <Outlet />
         </main>
         <section id="sidebar">

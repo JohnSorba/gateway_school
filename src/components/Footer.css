@@ -1,29 +1,45 @@
 .footer {
   position: relative;
   color: white;
+  font-size: 0.875rem;
   background-color: black;
-  background-color: var(--main-bg-color);
   background-color: var(--primary-darkBlue);
+  background-color: var(--main-bg-color);
   background-color: var(--main-bg-dark);
   /* background: var(--gradient-bg); */
   /* background: var(--section-bg); */
-  padding: 5rem 2rem;
+  padding: 5rem 2rem 2rem;
 }
 
 .footer-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 6rem;
+  grid-template-columns: 175px 1fr 1fr 1fr 1fr;
+  gap: 4rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
 }
 
 .footer-container article h3 {
-  border-bottom: 2px solid var(--main-bg-color);
+  border-bottom: 1px solid var(--subtle-background);
   padding-bottom: 0.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.3rem;
-  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.footer-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer-container ul .link {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.15rem;
+  transition: 0.2s all;
+}
+
+.footer-container ul .link:hover {
+  border-color: var(--text-white);
 }
 
 .logo-col img {
@@ -31,26 +47,14 @@
   width: 200px;
 }
 
-.footer-dropdown {
-  margin-top: 0.5rem;
+.footer .base {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0 0;
+  border-top: 1px solid var(--text-white);
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-.footer-dropdown li {
-  border: none;
-  border-left: 2px solid transparent;
-  padding: 0;
-}
-.footer-dropdown li:hover {
-  color: #07689f;
-  border-color: #07689f;
-  background-color: #a2d5f2;
-}
-
-.footer-dropdown .dropdown-nav-link {
-  display: inline-block;
-  padding: 0.5rem 0.25rem;
-}
-
 .social-links {
   display: flex;
   justify-content: flex-start;
@@ -65,9 +69,8 @@
 .toTop {
   position: absolute;
   bottom: 0;
-  right: 5%;
+  right: 3%;
   padding: 5px 0.5rem;
-  scroll-behavior: smooth;
   cursor: pointer;
 }
 
@@ -91,12 +94,22 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 575px) {
   .footer {
     padding: 3.5rem 1rem;
   }
 
   .footer-container {
     grid-template-columns: 1fr;
+  }
+
+  .footer-container ul {
+    gap: 1rem;
+  }
+
+  .footer .base {
+    flex-direction: column;
+    row-gap: 1rem;
+    padding: 1rem 0;
   }
 }
