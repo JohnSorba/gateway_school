@@ -3,11 +3,12 @@ import { HashLink as FaqLink } from "react-router-hash-link";
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import "./Footer.css";
-import { AboutNavDropdownData } from "../data/AboutPageData";
+import { AboutNavDropdownData } from "../data/ApplicationData";
+import { AcademicPageData } from "../data/ApplicationData";
 import { useSubpage } from "../Contexts/SubpageContext";
 
 function Footer() {
-  const { getPageIndex } = useSubpage();
+  const { getPageIndex, curPageIndex } = useSubpage();
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);
@@ -75,29 +76,21 @@ function Footer() {
           </ul>
         </article>
 
+        {/* ACADEMIC LINKS */}
         <article>
           <h3>Academic</h3>
           <ul>
-            <li>
-              <Link to="/academic/daycare" className="link">
-                Daycare
-              </Link>
-            </li>
-            <li>
-              <Link to="/academic/nursery" className="link">
-                Nursery
-              </Link>
-            </li>
-            <li>
-              <Link to="/academic/primary-school" className="link">
-                Primary
-              </Link>
-            </li>
-            <li>
-              <Link to="/academic/high-school" className="link">
-                High School
-              </Link>
-            </li>
+            {AcademicPageData.map((data, index) => (
+              <li key={index}>
+                <Link
+                  to={data.url}
+                  className={`link ${curPageIndex === index ? "active" : ""}`}
+                  onClick={() => getPageIndex(index)}
+                >
+                  {data.title}
+                </Link>
+              </li>
+            ))}
           </ul>
         </article>
         <article className="address-col">

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Gallery.css";
 import Testimonials from "./Testimonials";
-import { images } from "../data/AboutPageData";
+import { images } from "../data/ApplicationData";
 import GalleryModal from "./GalleryModal";
 
 function Gallery() {

@@ -17,6 +17,10 @@ import AboutMission from "../pages/AboutMission";
 import AboutHistory from "../pages/AboutHistory";
 import AboutAdministration from "../pages/AboutAdministration";
 import AboutGallery from "../pages/AboutGallery";
+import AcademicDaycare from "../pages/AcademicDaycare";
+import AcademicPrimary from "../pages/AcademicPrimary";
+import AcademicHigh from "../pages/AcademicHigh";
+import AcademicCurriculum from "../pages/AcademicCurriculum";
 
 function AppRouter() {
   return (
@@ -37,8 +41,14 @@ function AppRouter() {
           <Route path="gallery" element={<AboutGallery />} />
         </Route>
 
+        {/* ACADEMIC PAGE ROUTES */}
+        <Route path="academic" element={<Academic />}>
+          <Route index element={<AcademicCurriculum />} />
+          <Route path="daycare-nursery" element={<AcademicDaycare />} />
+          <Route path="primary-school" element={<AcademicPrimary />} />
+          <Route path="high-school" element={<AcademicHigh />} />
+        </Route>
         {/* OTHER ROUTES */}
-        <Route path="/academic" element={<Academic />} />
         <Route path="/parent" />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />

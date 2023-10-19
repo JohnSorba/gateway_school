@@ -6,8 +6,8 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import "./Navbar.css";
-import { AboutNavDropdownData } from "../data/AboutPageData";
-import { AcademicNavDropdownData } from "../data/AboutPageData";
+import { AboutNavDropdownData } from "../data/ApplicationData";
+import { AcademicNavDropdownData } from "../data/ApplicationData";
 import { useSubpage } from "../Contexts/SubpageContext";
 
 function Navbar() {
@@ -131,8 +131,8 @@ function Navbar() {
                 {AcademicNavDropdownData.map((data, index) => (
                   <li key={index} onClick={toggleNavbar}>
                     <NavLink
-                      // to={data.url}
-                      to="/"
+                      to={data.url}
+                      // to="/"
                       className={data.style}
                       onClick={() => getPageIndex(index)}
                     >

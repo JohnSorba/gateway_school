@@ -1,0 +1,128 @@
+.academic {
+  /* background-color: #fff; */
+}
+
+.academic-header {
+  background-size: cover;
+  background-position: 10% -350px;
+}
+
+.academic-header section {
+  display: flex;
+  align-items: flex-end;
+  height: 50vh;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.academic-header h1 {
+  font-size: 5rem;
+  padding: 0 1rem;
+  color: var(--text-white);
+  margin-bottom: -1rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: var(--main-bg-dark);
+  z-index: 1;
+}
+
+.academic-page-container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 2rem;
+  padding-bottom: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.academic-page-container main {
+  border-top: 48px solid var(--main-bg-dark);
+  border-top-right-radius: 48px;
+  padding-top: 3rem;
+}
+.academic-page-container h2 {
+  font-size: 2.5rem;
+}
+.academic-page-container h3 {
+  font-size: 1.5rem;
+}
+
+.academic-page-container div {
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* SIDEBAR CONTAINER */
+
+.sidebar-container h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1.5rem 0 1.5rem 1rem;
+  color: var(--text-white);
+  background-color: var(--content-background);
+  margin-bottom: 1rem;
+}
+
+.sidebar-container .link {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid var(--subtle-background);
+}
+
+.sidebar-container .link:hover {
+  background-color: var(--subtle-background);
+}
+
+.sidebar-container .link.active {
+  border-left: 4px solid var(--main-bg-dark);
+  padding-left: 1.5rem;
+  transition: 0.3s all;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 992px) {
+  .academic-page-container main {
+    border-top: 36px solid var(--main-bg-dark);
+    border-top-right-radius: 36px;
+    padding: 2rem 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .academic-page-container {
+    grid-template-columns: 1fr 200px;
+    row-gap: 2rem;
+  }
+  .header-container h2 {
+    text-align: center;
+    font-size: 3.5rem;
+    line-height: 1;
+  }
+
+  .academic-header h1 {
+    font-size: 2rem;
+    padding: 0 1rem;
+    border-top-left-radius: 0;
+  }
+
+  .academic-header section {
+    height: 30vh;
+  }
+}
+
+@media (max-width: 575px) {
+  .academic-page-container {
+    grid-template-columns: 1fr;
+  }
+  .header-container h2 {
+    font-size: 2.5rem;
+  }
+  .sidebar-content {
+    order: -1;
+  }
+}

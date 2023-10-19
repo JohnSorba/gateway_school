@@ -1,27 +1,3 @@
-// ABOUT PAGE DATA
-export const AboutPageData = [
-  {
-    title: "About Gateway",
-    path: "/about",
-  },
-  {
-    title: "Our Heritage and History",
-    path: "/about/history",
-  },
-  {
-    title: "Mission and Values",
-    path: "/about/mission",
-  },
-  {
-    title: "Leadership, Administration & Staff",
-    path: "/about/administration",
-  },
-  {
-    title: "Image Gallery",
-    path: "/about/gallery",
-  },
-];
-
 // NAVBAR DATA (ABOUT)
 export const AboutNavDropdownData = [
   {
@@ -51,17 +27,134 @@ export const AboutNavDropdownData = [
   },
 ];
 
+// ABOUT PAGE DATA
+export const AboutPageData = [
+  {
+    title: "About Gateway",
+    path: "/about",
+  },
+  {
+    title: "Our Heritage and History",
+    path: "/about/history",
+  },
+  {
+    title: "Mission and Values",
+    path: "/about/mission",
+  },
+  {
+    title: "Leadership, Administration & Staff",
+    path: "/about/administration",
+  },
+  {
+    title: "Image Gallery",
+    path: "/about/gallery",
+  },
+];
+// ACADEMIC PAGE DATA
+export const AcademicPageData = [
+  {
+    title: "Our Curriculum",
+    image: "/devotion.jpg",
+    url: "/academic",
+  },
+  {
+    title: "Daycare & Nursery",
+    image: "/backyard.jpg",
+    url: "/academic/daycare-nursery",
+  },
+  {
+    title: "Primary School",
+    image: "/assemblyKid.jpg",
+    url: "/academic/primary-school",
+  },
+  {
+    title: "High School",
+    image: "/backyard3.jpg",
+    url: "/academic/high-school",
+  },
+];
+
+// ACADEMIC CURRICULUM
+export const academicCurriculum = [
+  {
+    grade: "Daycare and Nursery",
+    ageGroup: "3 to 5 years",
+    subjects: [
+      "Early Childhood Development",
+      "Basic Motor Skills",
+      "Early Literacy and Numeracy",
+      "Creative Arts",
+    ],
+  },
+  {
+    grade: "Primary School (Grades 1 - 6)",
+    ageGroup: "6 to 12 years",
+    subjects: [
+      "English Language and Literature",
+      "Mathematics",
+      "Science",
+      "Social Studies",
+      "Local Language Studies",
+      "Physical Education",
+      "Art and Music",
+      "Computer Studies",
+      "Health and Hygiene",
+    ],
+    skills: [
+      "Critical thinking and problem-solving",
+      "Communication and presentation skills",
+      "Research and information literacy",
+    ],
+    characterEducation: [
+      "Values-based education promoting integrity, respect, and empathy",
+      "Community involvement and service learning",
+    ],
+  },
+  {
+    grade: "High School (Grades 7 - 9)",
+    ageGroup: "12 to 15 years",
+    subjects: [
+      "Advanced English Language and Literature",
+      "Algebra, Geometry, and Advanced Mathematics",
+      "Biology, Chemistry, and Physics",
+      "Geography and History",
+    ],
+    electives: [
+      "Foreign Languages",
+      "Advanced Computer Studies",
+      "Visual and Performing Arts",
+    ],
+    advancedSkills: [
+      "Critical analysis and research skills",
+      "Leadership and team-building activities",
+      "Career exploration and preparation",
+    ],
+    examinationPreparation: [
+      "Preparing students for national and international examinations",
+      "Fostering time management and study skills",
+    ],
+    valuesAndLeadership: [
+      "Continued emphasis on character development",
+      "Leadership training, mentoring, and community service projects",
+    ],
+    collegeAndCareerGuidance: [
+      "College admission counseling and career guidance",
+      "Preparing students for life beyond high school",
+    ],
+  },
+];
+
 // NAVBAR DATA (ACADEMIC)
 export const AcademicNavDropdownData = [
   {
-    title: "Daycare",
+    title: "Our Curriculum",
     style: "dropdown-link",
-    url: "/academic/daycare",
+    url: "/academic",
   },
   {
-    title: "Nursery",
+    title: "Daycare & Nursery",
     style: "dropdown-link",
-    url: "/academic/nursery",
+    url: "/academic/daycare-nursery",
   },
   {
     title: "Primary School",
@@ -111,6 +204,52 @@ export const profileData = [
   },
 ];
 
+// SERVICE DETAILS
+export const serviceDetails = [
+  {
+    title: "Daycare",
+    descripiton: "A nurturing environment for early childhood development.",
+    options: ["Infant Care", "Toddler Programs", "Early Learning", "Playgroup"],
+    link: "academic",
+    image:
+      "https://media.istockphoto.com/id/1427459436/photo/a-happy-female-teacher-sitting-and-playing-hand-games-with-a-group-of-little-schoolchildren.webp?b=1&s=612x612&w=0&k=20&c=GM4W4y1dFf0DJDFtzjzsYDfUkW-QacfZcPwSUwbxeBc=",
+  },
+  {
+    title: "Nursery",
+    descripiton: "Preparing young learners for a lifetime of discovery.",
+    options: ["Preschool Curriculum", "Early Literacy", "Outdoor Activities"],
+    link: "academic",
+    image:
+      "https://cdn.pixabay.com/photo/2017/04/05/08/18/kindergarten-2204239_640.jpg",
+  },
+  {
+    title: "Primary School",
+    descripiton: "Building a strong foundation for academic success.",
+    options: [
+      "Elementary Education",
+      "WASSCE Prep",
+      "Math & Science Focus",
+      "Physical Education",
+    ],
+    link: "academic",
+    image:
+      "https://cdn.pixabay.com/photo/2016/02/03/18/54/students-1177710_640.jpg",
+  },
+  {
+    title: "High School",
+    descripiton: "Empowering students to excel academically and beyond.",
+    options: [
+      "College Prep",
+      "Extracurricular Activities",
+      "Advanced Placement",
+      "Career Counseling",
+    ],
+    link: "academic",
+    image:
+      "https://media.istockphoto.com/id/1417921874/photo/young-woman-in-school-library.webp?b=1&s=612x612&w=0&k=20&c=zwmDdEkakJKmqY-W7dI00Jaa58dsudEwDQmbxKAJRkI=",
+  },
+];
+
 // GALLERY IMAGES
 export const images = [
   "/assembly.jpg",
@@ -154,7 +293,6 @@ export const heroSlides = [
 ];
 
 // ACCORDION FAQ.S
-
 export const faqs = [
   {
     title: "What are the school's operating hours?",

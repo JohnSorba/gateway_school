@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { profileData } from "../data/AboutPageData";
+import { profileData } from "../data/ApplicationData";
 import "./StaffSlide.css";
 
 function StaffSlide() {

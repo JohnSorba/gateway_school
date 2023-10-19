@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Outlet, Link } from "react-router-dom";
 import "./AboutPage.css";
-import { AboutPageData } from "../data/AboutPageData";
+import { AboutPageData } from "../data/ApplicationData";
 import Navbar from "../components/Navbar";
 import { useSubpage } from "../Contexts/SubpageContext";
 

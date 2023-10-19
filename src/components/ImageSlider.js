@@ -1,9 +1,8 @@
 import { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import "./ImageSlider.css";
-import Navbar from "./Navbar";
 import Hero from "./Hero";
-import { heroSlides } from "../data/AboutPageData";
+import { heroSlides } from "../data/ApplicationData";
 
 function ImageSlider() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -39,7 +38,6 @@ function ImageSlider() {
   return (
     <div className="sliderStyles">
       <div className="slideStyles" style={slideStyles}>
-        {/* <Navbar /> */}
         <Hero description={description} />
         <div className="dot-container">
           {heroSlides.map((_, index) => (

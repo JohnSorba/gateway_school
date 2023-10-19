@@ -1,4 +1,4 @@
-import { profileData } from "../data/AboutPageData";
+import { profileData } from "../data/ApplicationData";
 import "./AboutAdministration.css";
 
 function AboutAdministration() {

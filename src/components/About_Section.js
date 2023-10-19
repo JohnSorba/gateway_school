@@ -11,11 +11,7 @@ import "./AboutUs.css";
 import { Link } from "react-router-dom";
 import About_Slider from "./About_Slider";
 
-function About_Section({ curPageIndex, setCurPageIndex, getPageIndex }) {
-  const goToPage = () => {
-    const index = curPageIndex;
-    return index;
-  };
+function About_Section() {
   return (
     <section className="about-section">
       <div className="about-container">
@@ -32,11 +28,7 @@ function About_Section({ curPageIndex, setCurPageIndex, getPageIndex }) {
               apart as a catalyst for lifelong learning.
             </p>
 
-            <Link
-              to="/about/history"
-              className="btn"
-              onClick={() => goToPage()}
-            >
+            <Link to="/about" className="btn">
               Our Story
             </Link>
           </div>

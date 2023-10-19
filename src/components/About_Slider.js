@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import "./ImageSlider.css";
 import "./About_Slider.css";
-import { slides } from "../data/AboutPageData";
+import { slides } from "../data/ApplicationData";
 
 function About_Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);

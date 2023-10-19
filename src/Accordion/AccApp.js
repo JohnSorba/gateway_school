@@ -1,6 +1,6 @@
 import "./AccordionStyles.css";
 import { useState } from "react";
-import { faqs } from "../data/AboutPageData";
+import { faqs } from "../data/ApplicationData";
 
 export default function AccApp() {
   return (
