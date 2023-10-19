@@ -87,7 +87,7 @@ export const academicCurriculum = [
     ],
   },
   {
-    grade: "Primary School (Grades 1 - 6)",
+    grade: "Primary School (Classes 1 - 6)",
     ageGroup: "6 to 12 years",
     subjects: [
       "English Language and Literature",
@@ -111,7 +111,7 @@ export const academicCurriculum = [
     ],
   },
   {
-    grade: "High School (Grades 7 - 9)",
+    grade: "High School (JSS 1 - 3)",
     ageGroup: "12 to 15 years",
     subjects: [
       "Advanced English Language and Literature",
@@ -210,7 +210,7 @@ export const serviceDetails = [
     title: "Daycare",
     descripiton: "A nurturing environment for early childhood development.",
     options: ["Infant Care", "Toddler Programs", "Early Learning", "Playgroup"],
-    link: "academic",
+    link: "academic/daycare-nursery",
     image:
       "https://media.istockphoto.com/id/1427459436/photo/a-happy-female-teacher-sitting-and-playing-hand-games-with-a-group-of-little-schoolchildren.webp?b=1&s=612x612&w=0&k=20&c=GM4W4y1dFf0DJDFtzjzsYDfUkW-QacfZcPwSUwbxeBc=",
   },
@@ -218,7 +218,7 @@ export const serviceDetails = [
     title: "Nursery",
     descripiton: "Preparing young learners for a lifetime of discovery.",
     options: ["Preschool Curriculum", "Early Literacy", "Outdoor Activities"],
-    link: "academic",
+    link: "academic/daycare-nursery",
     image:
       "https://cdn.pixabay.com/photo/2017/04/05/08/18/kindergarten-2204239_640.jpg",
   },
@@ -231,7 +231,7 @@ export const serviceDetails = [
       "Math & Science Focus",
       "Physical Education",
     ],
-    link: "academic",
+    link: "academic/primary-school",
     image:
       "https://cdn.pixabay.com/photo/2016/02/03/18/54/students-1177710_640.jpg",
   },
@@ -244,7 +244,7 @@ export const serviceDetails = [
       "Advanced Placement",
       "Career Counseling",
     ],
-    link: "academic",
+    link: "academic/high-school",
     image:
       "https://media.istockphoto.com/id/1417921874/photo/young-woman-in-school-library.webp?b=1&s=612x612&w=0&k=20&c=zwmDdEkakJKmqY-W7dI00Jaa58dsudEwDQmbxKAJRkI=",
   },

@@ -1,4 +1,4 @@
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useParams } from "react-router-dom";
 import { academicCurriculum } from "../data/ApplicationData";
 import { AcademicPageData } from "../data/ApplicationData";
 import "./Academic.css";
@@ -6,6 +6,10 @@ import { useSubpage } from "../Contexts/SubpageContext";
 
 function Academic() {
   const { curPageIndex, getPageIndex } = useSubpage();
+
+  const { text } = useParams();
+
+  console.log(text);
 
   const styles = {
     backgroundImage: `url(${AcademicPageData[curPageIndex].image})`,

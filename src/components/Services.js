@@ -4,11 +4,21 @@ import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
 import "./Services.css";
 import { NavLink } from "react-router-dom";
 import { serviceDetails } from "../data/ApplicationData";
+import { useSubpage } from "../Contexts/SubpageContext";
 
 function Services() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const { getPageIndex } = useSubpage();
 
   const currentDetail = serviceDetails[currentIndex];
+
+  const goToIndex = (index) => {
+    if (currentIndex === 0) {
+      getPageIndex(1);
+    } else {
+      getPageIndex(index);
+    }
+  };
 
   const showNext = () => {
     if (currentIndex < serviceDetails.length - 1) {
@@ -64,7 +74,10 @@ function Services() {
                 ))}
               </ul>
               <div className="flex-items">
-                <NavLink to={currentDetail.link}>
+                <NavLink
+                  to={currentDetail.link}
+                  onClick={() => goToIndex(currentIndex)}
+                >
                   <button>Learn More</button>
                 </NavLink>
                 <div className="nav-btn-container">

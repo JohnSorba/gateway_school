@@ -112,6 +112,11 @@ function Navbar() {
                     Calendar
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink to="/" className="dropdown-link">
+                    Admissions
+                  </NavLink>
+                </li>
               </ul>
             </li>
 

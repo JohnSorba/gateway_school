@@ -1,6 +1,5 @@
 import { academicCurriculum } from "../data/ApplicationData";
 
-console.log(academicCurriculum[0]);
 const data = academicCurriculum[0];
 
 function AcademicDaycare() {
