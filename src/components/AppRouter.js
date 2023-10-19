@@ -1,5 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 // SITE PAGES
 import HomePage from "../pages/HomePage";
@@ -14,71 +17,35 @@ import AboutMission from "../pages/AboutMission";
 import AboutHistory from "../pages/AboutHistory";
 import AboutAdministration from "../pages/AboutAdministration";
 import AboutGallery from "../pages/AboutGallery";
-import Navbar from "./Navbar";
-import Footer from "./Footer";
 
 function AppRouter() {
-  const [curPageIndex, setCurPageIndex] = useState(0);
-
-  const getPageIndex = (index) => {
-    setCurPageIndex(index);
-  };
-
-  // useEffect(() => {
-  //   const savedIndex = localStorage.getItem("curPageIndex");
-  //   if (savedIndex !== null) {
-  //     setCurPageIndex(parseInt(savedIndex, 10));
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   localStorage.setItem("curPageIndex", curPageIndex);
-  // }, [curPageIndex]);
-
   return (
-    <div>
-      {" "}
-      <BrowserRouter>
-        <Navbar curPageIndex={curPageIndex} getPageIndex={getPageIndex} />
-        {/* NAVIGATION */}
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={
-              <HomePage
-                curPageIndex={curPageIndex}
-                getPageIndex={getPageIndex}
-              />
-            }
-          />
+    <BrowserRouter>
+      <ScrollToTop />
+      <Navbar />
 
-          {/* ABOUT PAGE ROUTES */}
-          <Route
-            path="about"
-            element={
-              <AboutPage
-                curPageIndex={curPageIndex}
-                setCurPageIndex={setCurPageIndex}
-                getPageIndex={getPageIndex}
-              />
-            }
-          >
-            <Route index element={<AboutContent />} />
-            <Route path="history" element={<AboutHistory />} />
-            <Route path="mission" element={<AboutMission />} />
-            <Route path="administration" element={<AboutAdministration />} />
-            <Route path="gallery" element={<AboutGallery />} />
-          </Route>
-          <Route path="/academic" element={<Academic />} />
-          <Route path="/parent" />
-          <Route path="/events" element={<Events />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/contact#faq" element={<Contact />} />
-        </Routes>
-        <Footer getPageIndex={getPageIndex} />
-      </BrowserRouter>
-    </div>
+      {/* NAVIGATION */}
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+
+        {/* ABOUT PAGE ROUTES */}
+        <Route path="about" element={<AboutPage />}>
+          <Route index element={<AboutContent />} />
+          <Route path="history" element={<AboutHistory />} />
+          <Route path="mission" element={<AboutMission />} />
+          <Route path="administration" element={<AboutAdministration />} />
+          <Route path="gallery" element={<AboutGallery />} />
+        </Route>
+
+        {/* OTHER ROUTES */}
+        <Route path="/academic" element={<Academic />} />
+        <Route path="/parent" />
+        <Route path="/events" element={<Events />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact/:section" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 

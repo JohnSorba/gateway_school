@@ -1,4 +1,3 @@
-import Navbar from "../components/Navbar";
 import "./Contact.css";
 import {
   FaPhoneAlt,
@@ -10,8 +9,20 @@ import {
 import { GrMail } from "react-icons/gr";
 import { BiTimeFive } from "react-icons/bi";
 import AccApp from "../Accordion/AccApp";
+import { useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 function Contact() {
+  const { section } = useParams();
+
+  useEffect(() => {
+    // Scroll to the section based on the 'section' variable
+    const sectionElement = document.getElementById(section);
+    if (sectionElement) {
+      sectionElement.scrollIntoView({ behavior: "smooth" });
+    }
+  }, [section]);
+
   return (
     <div>
       <div id="contact-page">

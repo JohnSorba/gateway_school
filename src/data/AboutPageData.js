@@ -22,7 +22,7 @@ export const AboutPageData = [
   },
 ];
 
-// NAVBAR DATA (ABOUT / ACADEMIC)
+// NAVBAR DATA (ABOUT)
 export const AboutNavDropdownData = [
   {
     title: "About Us",
@@ -51,6 +51,7 @@ export const AboutNavDropdownData = [
   },
 ];
 
+// NAVBAR DATA (ACADEMIC)
 export const AcademicNavDropdownData = [
   {
     title: "Daycare",
@@ -74,6 +75,7 @@ export const AcademicNavDropdownData = [
   },
 ];
 
+// Staff Profile Data
 export const profileData = [
   {
     image:

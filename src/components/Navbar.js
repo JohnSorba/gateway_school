@@ -8,11 +8,13 @@ import {
 import "./Navbar.css";
 import { AboutNavDropdownData } from "../data/AboutPageData";
 import { AcademicNavDropdownData } from "../data/AboutPageData";
+import { useSubpage } from "../Contexts/SubpageContext";
 
-function Navbar({ getPageIndex }) {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState([false, false]);
   const [isSticky, setIsSticky] = useState(false);
+  const { getPageIndex } = useSubpage();
 
   const toggleDropdown = (index) => {
     const updatedDropdownOpen = [...dropdownOpen];
@@ -106,7 +108,7 @@ function Navbar({ getPageIndex }) {
                 className={`dropdown ${dropdownOpen[1] ? "open" : ""}`}
               >
                 <li>
-                  <NavLink to="curriculum" className="dropdown-link">
+                  <NavLink to="/" className="dropdown-link">
                     Calendar
                   </NavLink>
                 </li>
@@ -129,7 +131,8 @@ function Navbar({ getPageIndex }) {
                 {AcademicNavDropdownData.map((data, index) => (
                   <li key={index} onClick={toggleNavbar}>
                     <NavLink
-                      to={data.url}
+                      // to={data.url}
+                      to="/"
                       className={data.style}
                       onClick={() => getPageIndex(index)}
                     >
@@ -142,7 +145,7 @@ function Navbar({ getPageIndex }) {
 
             {/* EVENTS/NEWS DROPDOWN LINK */}
             <li onClick={toggleNavbar}>
-              <NavLink to="/events" className="nav-link">
+              <NavLink to="/" className="nav-link">
                 Events/News
               </NavLink>
             </li>

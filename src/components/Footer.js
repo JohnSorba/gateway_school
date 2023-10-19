@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import { HashLink as FaqLink } from "react-router-hash-link";
 import { ChevronUpIcon } from "@heroicons/react/24/outline";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import "./Footer.css";
 import { AboutNavDropdownData } from "../data/AboutPageData";
+import { useSubpage } from "../Contexts/SubpageContext";
 
-function Footer({ getPageIndex }) {
+function Footer() {
+  const { getPageIndex } = useSubpage();
+
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -64,9 +68,9 @@ function Footer({ getPageIndex }) {
               </Link>
             </li>
             <li>
-              <Link to="/contact#faq" className="link">
+              <FaqLink to="/contact#faq" className="link">
                 FAQs
-              </Link>
+              </FaqLink>
             </li>
           </ul>
         </article>

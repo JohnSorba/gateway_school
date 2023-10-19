@@ -1,5 +1,7 @@
 import { useState } from "react";
 import AppRouter from "./components/AppRouter";
+import { SubpageProvider } from "./Contexts/SubpageContext";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +18,9 @@ function App() {
 
   return (
     <div>
-      <AppRouter></AppRouter>
+      <SubpageProvider>
+        <AppRouter></AppRouter>
+      </SubpageProvider>
     </div>
   );
 }
