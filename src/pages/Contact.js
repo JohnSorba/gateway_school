@@ -11,6 +11,8 @@ import { BiTimeFive } from "react-icons/bi";
 import AccApp from "../Accordion/AccApp";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
+import Accordion from "../Accordion/AccApp";
+import { faqs } from "../data/ApplicationData";
 
 function Contact() {
   const { section } = useParams();
@@ -82,7 +84,7 @@ function Contact() {
         {/* FAQ's */}
         <section id="faq">
           <div className="faq-container">
-            <AccApp />
+            <Accordion data={faqs} />
           </div>
         </section>
         {/* Google Maps */}

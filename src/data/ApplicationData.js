@@ -335,3 +335,204 @@ export const faqs = [
     text: "We encourage parental involvement through the Parent-Teacher Association (PTA) and volunteering opportunities.",
   },
 ];
+
+// ACADEMIC CALENDAR
+export const academicCalendar = [
+  {
+    month: "September",
+    events: [
+      {
+        date: "5-6",
+        event: "School Reopens",
+        description:
+          "All students and staff return to campus for the start of the academic year.",
+      },
+      {
+        date: "8",
+        event: "Parent-Teacher Meeting (PTM) - Daycare and Nursery",
+        description:
+          "An opportunity for parents to meet teachers and discuss their child's progress.",
+      },
+      {
+        date: "15",
+        event: "School Picture Day",
+        description: "Individual and class photos will be taken.",
+      },
+      {
+        date: "22",
+        event: "Curriculum Night - Primary School",
+        description:
+          "Parents are invited to learn more about the curriculum and classroom activities.",
+      },
+    ],
+  },
+  {
+    month: "October",
+    events: [
+      {
+        date: "10",
+        event: "National Holiday (No School)",
+        description: "School is closed in observance of the national holiday.",
+      },
+      {
+        date: "16-20",
+        event: "High School Midterm Exams",
+        description: "High school students will take midterm examinations.",
+      },
+      {
+        date: "31",
+        event: "Halloween Celebration (Primary School)",
+        description:
+          "A fun and creative celebration with costumes and activities.",
+      },
+    ],
+  },
+  {
+    month: "November",
+    events: [
+      {
+        date: "2",
+        event: "Parent-Teacher Meeting (PTM) - Primary School",
+        description:
+          "An opportunity for parents to discuss their child's academic progress.",
+      },
+      {
+        date: "11",
+        event: "Field Trip - Nursery and Primary School",
+        description:
+          "A day for students to explore educational and fun destinations.",
+      },
+      {
+        date: "22-24",
+        event: "Thanksgiving Break",
+        description: "School is closed for the Thanksgiving holiday.",
+      },
+    ],
+  },
+  {
+    month: "December",
+    events: [
+      {
+        date: "15",
+        event: "Winter Concert",
+        description: "A showcase of student talents in music and the arts.",
+      },
+      {
+        date: "20",
+        event: "Last Day of School",
+        description: "Students break for the winter holiday.",
+      },
+      {
+        date: "24 - 2 Jan 2024",
+        event: "Winter Break",
+        description: "School is closed for the winter holiday.",
+      },
+    ],
+  },
+];
+
+// ADMISSION PROCESS
+export const admissionProcess = [
+  {
+    title: "Admission Process for Daycare and Nursery",
+    text: [
+      <ul>
+        <li>
+          Parents or guardians make an initial inquiry by contacting the school
+          via email or phone.
+        </li>
+        <li>
+          Scheduled school tours provide an opportunity for parents to explore
+          our facilities and meet our staff.
+        </li>
+        <li>
+          Parents complete and submit an application form, including the child's
+          details and any requested documentation.
+        </li>
+        <li>
+          An informal interview is conducted with the child and parent or
+          guardian to assess readiness.
+        </li>
+        <li>
+          Parents receive notification of acceptance, and details about tuition,
+          uniforms, and school policies are provided.
+        </li>
+        <li>
+          Once accepted, parents complete enrollment forms, make payments, and
+          secure a spot in the daycare or nursery program.
+        </li>
+      </ul>,
+    ],
+  },
+  {
+    title: "Admissions Process for Primary School (Classes 1 - 6)",
+    text: [
+      <ul>
+        <li>
+          Parents make an initial inquiry about admission by contacting the
+          school.
+        </li>
+
+        <li>
+          Students may be required to undergo an entrance assessment to evaluate
+          their readiness for the primary curriculum.
+        </li>
+
+        <li>
+          Parents complete and submit the official application form along with
+          required documents.
+        </li>
+
+        <li>
+          Interview (Parent-Pupil) - An interview may be scheduled with the
+          student and parents to discuss goals, expectations, and the school's
+          values.
+        </li>
+
+        <li>
+          Parents are notified of acceptance and receive details about fees,
+          uniforms, and academic requirements.
+        </li>
+        <li>
+          Once accepted, parents complete enrollment forms, submit fees, and
+          secure a place in the primary school program.
+        </li>
+      </ul>,
+    ],
+  },
+  {
+    title: "Admissions Process for High School (JSS 1 - 3)",
+    text: [
+      <ul>
+        <li>
+          Parents or guardians make an initial inquiry about high school
+          admission.
+        </li>
+        <li>
+          Submission of academic records or transcripts from the previous school
+          may be required.
+        </li>
+        <li>
+          Parents complete and submit the official high school application form,
+          including requested documentation.
+        </li>
+        <li>
+          High school applicants may be required to take an entrance examination
+          to assess their academic preparedness.
+        </li>
+        <li>
+          An interview is scheduled with the student and parents to discuss
+          academic goals, character, and values.
+        </li>
+        <li>
+          Parents are notified of acceptance and provided with information about
+          fees, curriculum, and expectations.
+        </li>
+        <li>
+          Once accepted, parents complete enrollment forms, make payments, and
+          secure a place in the high school program.
+        </li>
+      </ul>,
+    ],
+  },
+];

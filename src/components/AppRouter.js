@@ -22,6 +22,8 @@ import AcademicPrimary from "../pages/AcademicPrimary";
 import AcademicHigh from "../pages/AcademicHigh";
 import AcademicCurriculum from "../pages/AcademicCurriculum";
 import { HeadTeacherSpeech } from "./StaffSlide";
+import Admissions from "../pages/Admissions";
+import Calendar from "../pages/Calendar";
 
 function AppRouter() {
   return (
@@ -50,8 +52,14 @@ function AppRouter() {
           <Route path="primary-school" element={<AcademicPrimary />} />
           <Route path="high-school" element={<AcademicHigh />} />
         </Route>
+
+        {/* PARENT PAGE ROUTES */}
+        <Route path="/parent">
+          <Route path="admission" element={<Admissions />} />
+          <Route path="calendar" element={<Calendar />} />
+        </Route>
+
         {/* OTHER ROUTES */}
-        <Route path="/parent" />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact/:section" element={<Contact />} />

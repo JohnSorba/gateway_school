@@ -108,12 +108,12 @@ function Navbar() {
                 className={`dropdown ${dropdownOpen[1] ? "open" : ""}`}
               >
                 <li>
-                  <NavLink to="/" className="dropdown-link">
+                  <NavLink to="/parent/calendar" className="dropdown-link">
                     Calendar
                   </NavLink>
                 </li>
                 <li>
-                  <NavLink to="/" className="dropdown-link">
+                  <NavLink to="/parent/admission" className="dropdown-link">
                     Admissions
                   </NavLink>
                 </li>

@@ -30,7 +30,8 @@
   --text-white: #fff;
   --accent: #ffd700;
   --complementary-accent: #228b22;
-  --subtle-background: #f5f5f5;
+  /* --subtle-background: #f5f5f5; */
+  --subtle-background: #ccc;
   /* --subtle-background: #f5f5f53f; */
 }
 

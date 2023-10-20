@@ -1,0 +1,77 @@
+.calendar-header,
+.calendar-main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.calendar-header {
+  padding: 4rem 1rem;
+}
+
+.calendar-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.calendar-main {
+  padding: 2rem 1rem 4rem;
+}
+
+/* CALENDAR TABLE DESIGIN */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1.5rem;
+}
+
+th {
+  color: var(--text-white);
+  background-color: var(--main-bg-dark);
+  text-align: left;
+  padding: 0.625rem;
+  font-weight: 600;
+  border-bottom: 2px solid var(--subtle-background);
+  border-radius: 10px;
+}
+
+td {
+  padding: 1rem 0.625rem;
+  border-bottom: 1px solid var(--subtle-background);
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+td:first-child {
+  font-weight: 600;
+}
+
+/* TABLET SCREENS */
+@media (max-width: 1024px) {
+}
+
+/* Media Query for mobile layout */
+@media (max-width: 768px) {
+}
+
+@media (max-width: 575px) {
+  th,
+  td {
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  th {
+    font-size: 14px;
+  }
+
+  .month {
+    transform: rotate(-90deg);
+  }
+}

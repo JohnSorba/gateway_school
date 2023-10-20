@@ -68,8 +68,8 @@
 
 .toTop {
   position: absolute;
-  bottom: 0;
-  right: 3%;
+  top: 0%;
+  right: 0;
   padding: 5px 0.5rem;
   cursor: pointer;
 }

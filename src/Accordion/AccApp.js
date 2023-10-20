@@ -1,21 +1,11 @@
 import "./AccordionStyles.css";
 import { useState } from "react";
-import { faqs } from "../data/ApplicationData";
 
-export default function AccApp() {
-  return (
-    <div className="accordion">
-      <Accordion data={faqs} />
-    </div>
-  );
-}
-
-function Accordion({ data }) {
+export default function Accordion({ data }) {
   const [curOpen, setCurOpen] = useState(null);
 
   return (
-    <>
-      <h2>FAQ's</h2>
+    <div className="accordion">
       <div className="accordion-item">
         {data.map((el, i) => (
           <AccordionItem
@@ -29,7 +19,7 @@ function Accordion({ data }) {
           </AccordionItem>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

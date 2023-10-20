@@ -63,12 +63,12 @@ function Footer() {
           <h3>Parents</h3>
           <ul className="mb-8">
             <li>
-              <Link to="parents/calendar" className="link">
+              <Link to="parent/calendar" className="link">
                 Calendar
               </Link>
             </li>{" "}
             <li>
-              <Link to="parents/curriculum" className="link">
+              <Link to="parent/admission" className="link">
                 Admissions
               </Link>
             </li>

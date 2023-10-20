@@ -50,23 +50,25 @@
   grid-column: 2 / -1;
   padding-bottom: 16px;
   line-height: 1.6;
+  max-height: auto;
   opacity: 0;
-  transition: opacity 4s ease-in;
+  transition: 4s all;
 }
 
 .content-box ul {
-  color: var(--complementary-accent);
+  /* color: var(--complementary-accent); */
   margin-left: 16px;
   margin-top: 16px;
 
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 1rem;
+  list-style-type: circle;
 }
 
 /* OPEN STATE */
 .item.open {
-  max-height: 500px;
+  max-height: auto;
 }
 
 .open {
