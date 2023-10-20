@@ -21,6 +21,7 @@ import AcademicDaycare from "../pages/AcademicDaycare";
 import AcademicPrimary from "../pages/AcademicPrimary";
 import AcademicHigh from "../pages/AcademicHigh";
 import AcademicCurriculum from "../pages/AcademicCurriculum";
+import { HeadTeacherSpeech } from "./StaffSlide";
 
 function AppRouter() {
   return (
@@ -38,6 +39,7 @@ function AppRouter() {
           <Route path="history" element={<AboutHistory />} />
           <Route path="mission" element={<AboutMission />} />
           <Route path="administration" element={<AboutAdministration />} />
+          <Route path="headteacher-speech" element={<HeadTeacherSpeech />} />
           <Route path="gallery" element={<AboutGallery />} />
         </Route>
 

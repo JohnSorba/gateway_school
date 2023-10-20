@@ -1,7 +1,22 @@
 import { Link } from "react-router-dom";
 import "./AboutContent.css";
+import { useSubpage } from "../Contexts/SubpageContext";
 
 function AboutContent() {
+  const { setCurPageIndex } = useSubpage();
+
+  const goToDaycare = () => {
+    setCurPageIndex(1);
+  };
+
+  const goToPrimary = () => {
+    setCurPageIndex(2);
+  };
+
+  const goToHighSchool = () => {
+    setCurPageIndex(3);
+  };
+
   return (
     <section className="about-content">
       <header className="heading">
@@ -10,7 +25,7 @@ function AboutContent() {
           <img src="/gateway_frontview.jpg" alt="gateway school" />
           <figcaption>
             <blockquote>
-              <q className="italic">
+              <q className="italic text-sm">
                 A front view of Gateway Daycare, Nursery, Preparatory and High
                 School
               </q>
@@ -30,16 +45,31 @@ function AboutContent() {
         <article className="aboutus">
           <h2>A Comprehensive Education Experience</h2>
           <p>
-            We cater to students from their earliest years in daycare and
-            nursery programs, guiding them through primary school and into the
-            high school journey. Our holistic approach to education ensures that
-            each child's learning experience is nurtured and enriched.
+            We cater to students from their earliest years in{" "}
+            <Link
+              to="/academic/daycare-nursery"
+              className="text-blue-700"
+              onClick={goToDaycare}
+            >
+              Daycare and Nursery
+            </Link>{" "}
+            programs, guiding them through primary school and into the high
+            school journey. Our holistic approach to education ensures that each
+            child's learning experience is nurtured and enriched.
           </p>
         </article>
         <article className="values">
           <h2>Primary School Excellence</h2>
           <p>
-            In the primary school, our students are prepared for the{" "}
+            In the{" "}
+            <Link
+              to="/academic/primary-school"
+              className="text-blue-700"
+              onClick={goToPrimary}
+            >
+              Primary school
+            </Link>
+            , our students are prepared for the{" "}
             <em>National Primary School Examination (NPSE)</em>, a significant
             step in their educational journey. This examination opens doors to
             further education and qualification into our esteemed high school or
@@ -49,9 +79,17 @@ function AboutContent() {
         <article className="admin">
           <h2>The Gateway to High School</h2>
           <p>
-            Our high school offers a comprehensive program spanning three
-            levels: Junior High School (JHS 1 - 3). Here, students receive a
-            well-rounded education that prepares them for the{" "}
+            Our{" "}
+            <Link
+              to="/academic/high-school"
+              className="text-blue-700"
+              onClick={goToHighSchool}
+            >
+              High school
+            </Link>{" "}
+            offers a comprehensive program spanning three levels: Junior High
+            School (JHS 1 - 3). Here, students receive a well-rounded education
+            that prepares them for the{" "}
             <em>Basic Education Certificate Examination (BECE)</em> and other
             future challenges and opportunities.
           </p>

@@ -99,4 +99,8 @@
   #sidebar {
     order: -1;
   }
+
+  .aboutpage-container main {
+    padding: 1rem 1rem;
+  }
 }

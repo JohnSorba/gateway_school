@@ -146,10 +146,44 @@
 }
 
 .read-more {
-  color: red;
+  color: var(--primary-darkBlue);
   text-decoration: underline;
 }
 
+/* HEADTEACHER'S SPEECH COMPONENT STYLES */
+.headteacher-speech {
+  text-align: justify;
+  line-height: 1.8;
+  border-bottom: 2px solid var(--subtle-background);
+  padding-bottom: 1rem;
+}
+
+.headteacher-speech h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+.headteacher-speech .heading {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.headteacher-speech img {
+  align-self: stretch;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.headteacher-speech p {
+  margin-bottom: 1rem;
+}
+
+.headteacher-speech blockquote {
+  font-size: 1rem;
+  text-align: right;
+}
+
+/* RESPONSIVE STYLES */
 @media (max-width: 992px) {
 }
 
@@ -209,5 +243,14 @@
     font-size: 1.75rem;
     line-height: 1.2;
     margin-bottom: 1rem;
+  }
+
+  .headteacher-speech h1 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .headteacher-speech .heading {
+    grid-template-columns: 1fr;
+    margin-bottom: 1.25rem;
   }
 }

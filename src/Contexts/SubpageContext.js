@@ -7,6 +7,8 @@ const SubpageContext = createContext();
 function SubpageProvider({ children }) {
   const [curPageIndex, setCurPageIndex] = useState(0);
 
+  console.log(curPageIndex);
+
   const getPageIndex = (index) => {
     setCurPageIndex(index);
   };

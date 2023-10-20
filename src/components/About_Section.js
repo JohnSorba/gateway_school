@@ -10,8 +10,15 @@ import {
 import "./AboutUs.css";
 import { Link } from "react-router-dom";
 import About_Slider from "./About_Slider";
+import { useSubpage } from "../Contexts/SubpageContext";
 
 function About_Section() {
+  const { setCurPageIndex } = useSubpage();
+
+  const goToIndex = () => {
+    setCurPageIndex(1);
+  };
+
   return (
     <section className="about-section">
       <div className="about-container">
@@ -28,7 +35,7 @@ function About_Section() {
               apart as a catalyst for lifelong learning.
             </p>
 
-            <Link to="/about" className="btn">
+            <Link to="/about/history" className="btn" onClick={goToIndex}>
               Our Story
             </Link>
           </div>

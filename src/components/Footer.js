@@ -40,6 +40,24 @@ function Footer() {
           </ul>
         </article>
 
+        {/* ACADEMIC LINKS */}
+        <article>
+          <h3>Academic</h3>
+          <ul>
+            {AcademicPageData.map((data, index) => (
+              <li key={index}>
+                <Link
+                  to={data.url}
+                  className={`link ${curPageIndex === index ? "active" : ""}`}
+                  onClick={() => getPageIndex(index)}
+                >
+                  {data.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </article>
+
         {/* PARENTS LINKS */}
         <article>
           <h3>Parents</h3>
@@ -76,23 +94,7 @@ function Footer() {
           </ul>
         </article>
 
-        {/* ACADEMIC LINKS */}
-        <article>
-          <h3>Academic</h3>
-          <ul>
-            {AcademicPageData.map((data, index) => (
-              <li key={index}>
-                <Link
-                  to={data.url}
-                  className={`link ${curPageIndex === index ? "active" : ""}`}
-                  onClick={() => getPageIndex(index)}
-                >
-                  {data.title}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </article>
+        {/* ADDRESS COLUMN */}
         <article className="address-col">
           <div className="mb-8">
             <h3>Visit Us</h3>
@@ -108,7 +110,7 @@ function Footer() {
             <address>
               <p>
                 <span>Tel: </span>
-                <a href="tel:0023276483409">076-483409</a>
+                <a href="tel:0023234243599">00 (232) 34 243599</a>
                 <br />
                 <span>Email: </span>
                 <a href="mailto:hello@gateway.com">hello@gateway.com</a>

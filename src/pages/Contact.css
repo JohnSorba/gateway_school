@@ -128,11 +128,25 @@
 }
 
 @media (max-width: 575px) {
+  .header-container {
+    padding: 3.5rem 0;
+  }
+
+  .header-container h1 {
+    font-size: 1.75rem;
+    letter-spacing: -1px;
+  }
+
   #google-map {
     padding-top: 2rem;
   }
   .map-container {
     grid-template-columns: 1fr;
     row-gap: 3rem;
+  }
+
+  .map-container h1 {
+    font-size: 2rem;
+    padding: 1rem 0;
   }
 }

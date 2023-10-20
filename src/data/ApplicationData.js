@@ -49,6 +49,10 @@ export const AboutPageData = [
     title: "Image Gallery",
     path: "/about/gallery",
   },
+  {
+    title: "Head Teacher's Speech",
+    path: "/about/headteacher-speech",
+  },
 ];
 // ACADEMIC PAGE DATA
 export const AcademicPageData = [
