@@ -2,6 +2,30 @@ import React from "react";
 import { academicCalendar } from "../data/ApplicationData";
 import "./CalendarPage.css";
 
+import jsPDF from "jspdf";
+import "jspdf-autotable";
+
+function generatePDF(academicCalendar) {
+  const doc = new jsPDF();
+
+  doc.setFontSize(18);
+  doc.text("Academic Calendar", 70, 15);
+
+  academicCalendar.forEach((monthInfo) => {
+    doc.autoTable({
+      head: [["Date", "Event", "Description"]],
+      body: monthInfo.events.map((event) => [
+        event.date,
+        event.event,
+        event.description,
+      ]),
+      startY: doc.autoTableEndPosY() + 20,
+    });
+  });
+
+  doc.save("academic_calendar.pdf");
+}
+
 function Calendar() {
   return (
     <section className="calendar">
@@ -135,6 +159,12 @@ function Calendar() {
             events and important dates for the term September to December 2023.
           </em>
         </p>
+        {/* <button
+          className="btn py-2 px-4 mt-8 bg-blue-500 rounded-lg"
+          onClick={() => generatePDF(academicCalendar)}
+        >
+          Download PDF
+        </button> */}
       </main>
     </section>
   );

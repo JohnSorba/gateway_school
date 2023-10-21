@@ -270,15 +270,12 @@ export const images = [
 ];
 
 // ABOUT SECTION SLIDESHOW IMAGES
-export const slides = [
-  {
-    url: "/assembly.jpg",
-    title: "Boat",
-  },
-  { url: "/assemblyKid.jpg", title: "Boat" },
-  { url: "/uncAug.jpg", title: "Boat" },
-  { url: "/gateway_topview.jpg", title: "Boat" },
-  { url: "/gateway_frontview.jpg", title: "Boat" },
+export const aboutImages = [
+  { url: "/assemblyKid.jpg", title: "image 2" },
+  { url: "/uncAug.jpg", title: "image 3" },
+  { url: "/devotion.jpg", title: "image 1" },
+  { url: "/awards_ceremony.jpg", title: "image 4" },
+  { url: "/gateway_frontview.jpg", title: "image 5" },
 ];
 
 // HERO CAROUSEL SLIDE

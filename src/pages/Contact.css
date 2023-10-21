@@ -86,7 +86,9 @@
 /* FAQ */
 #faq {
   padding: 5rem 1rem 5rem;
-  /* background: var(--section-bg); */
+  background: var(--section-bg);
+  background: url("/public/cool-background.svg");
+  background-size: cover;
 }
 
 .faq-container {

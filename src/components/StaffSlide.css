@@ -1,11 +1,8 @@
 #staff-section {
   padding: 7% 1rem;
-  /* background: linear-gradient(
-    to top,
-    rgba(242, 251, 255, 0.8),
-    rgba(225, 243, 253, 0.2),
-    rgba(242, 251, 255, 0.8)
-  ); */
+  background: url(/public/cool-background.svg);
+  background-size: cover;
+  background-position: 0% 0;
 }
 
 .staff-container {
@@ -138,6 +135,7 @@
 .speech-grid h3 {
   font-size: 2rem;
   font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .speech-grid blockquote {
@@ -185,6 +183,14 @@
 
 /* RESPONSIVE STYLES */
 @media (max-width: 992px) {
+  .headteacher-speech .heading {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .headteacher-speech h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
 }
 
 @media (max-width: 768px) {

@@ -17,11 +17,15 @@ import AboutMission from "../pages/AboutMission";
 import AboutHistory from "../pages/AboutHistory";
 import AboutAdministration from "../pages/AboutAdministration";
 import AboutGallery from "../pages/AboutGallery";
+
+// ACADEMIC SUB-PAGES
 import AcademicDaycare from "../pages/AcademicDaycare";
 import AcademicPrimary from "../pages/AcademicPrimary";
 import AcademicHigh from "../pages/AcademicHigh";
 import AcademicCurriculum from "../pages/AcademicCurriculum";
 import { HeadTeacherSpeech } from "./StaffSlide";
+
+// ADMISSIONS AND CALENDAR PAGES
 import Admissions from "../pages/Admissions";
 import Calendar from "../pages/Calendar";
 

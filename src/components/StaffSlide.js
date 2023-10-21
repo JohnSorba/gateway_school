@@ -59,9 +59,7 @@ function StaffSlide() {
               teachers who impart knowledge and instill a love for learning to
               our dedicated support staff who ensure a safe and organized
               campus, every member of our team contributes to the holistic
-              development of our students. Their unwavering dedication is the
-              driving force behind our school's success, fostering a culture of
-              innovation, growth, and academic achievement.
+              development of our students.
               <Link
                 to="/about/headteacher-speech"
                 className="read-more"

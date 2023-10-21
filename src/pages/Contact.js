@@ -84,6 +84,9 @@ function Contact() {
         {/* FAQ's */}
         <section id="faq">
           <div className="faq-container">
+            <h1 className="text-4xl text-center mb-16">
+              Frequently Asked Questions
+            </h1>
             <Accordion data={faqs} />
           </div>
         </section>

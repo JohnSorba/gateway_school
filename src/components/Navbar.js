@@ -13,7 +13,7 @@ import { useSubpage } from "../Contexts/SubpageContext";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState([false, false]);
-  const [isSticky, setIsSticky] = useState(false);
+  const [isSticky, setIsSticky] = useState(true);
   const { getPageIndex } = useSubpage();
 
   const toggleDropdown = (index) => {
