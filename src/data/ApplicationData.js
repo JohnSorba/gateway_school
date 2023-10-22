@@ -533,3 +533,60 @@ export const admissionProcess = [
     ],
   },
 ];
+
+export const mainEvents = [
+  {
+    id: 1,
+    date: "2023-09-15",
+    title: "Annual School Picnic",
+    image: "https://picsum.photos/id/42/300/200",
+    description:
+      "Join us for a fun-filled day at our annual school picnic. Activities, games, and delicious food await!",
+    isFeatured: true,
+  },
+  {
+    id: 2,
+    date: "2023-10-20",
+    title: "Parent-Teacher Conference",
+    image: "https://picsum.photos/id/21/300/200",
+    description:
+      "A valuable opportunity to discuss your child's progress with their teachers and set goals for success.",
+    isFeatured: true,
+  },
+  {
+    id: 3,
+    date: "2023-11-10",
+    title: "Science Fair Exhibition",
+    image: "https://picsum.photos/id/80/300/200",
+    description:
+      "Explore the wonders of science as our students showcase their innovative experiments and projects.",
+    isFeatured: false,
+  },
+  {
+    id: 4,
+    date: "2023-12-15",
+    title: "Winter Concert",
+    image: "https://picsum.photos/id/29/300/200",
+    description:
+      "Enjoy the magical melodies of our students in a heartwarming winter concert to celebrate the season.",
+    isFeatured: true,
+  },
+  {
+    id: 5,
+    date: "2023-10-31",
+    title: "Quiz Competition",
+    image: "https://picsum.photos/id/40/300/200",
+    description:
+      "Brace yourselves as the heavyweights of Gateway come together for an enthralling and exciting competition of the wits.",
+    isFeatured: false,
+  },
+  {
+    id: 6,
+    date: "2023-12-5",
+    title: "Sport and Athletics Day",
+    image: "https://picsum.photos/id/96/300/200",
+    description:
+      "Another year of thrills and fun and games. Gateway pupils put their physical prowess to the test to find the ultimate champion!",
+    isFeatured: false,
+  },
+];

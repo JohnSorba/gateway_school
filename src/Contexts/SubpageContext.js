@@ -8,8 +8,6 @@ function SubpageProvider({ children }) {
   const [curPageIndex, setCurPageIndex] = useState(0);
   const [academicPageIndex, setAcademicPageIndex] = useState(0);
 
-  console.log(curPageIndex);
-
   const getPageIndex = (index) => {
     setCurPageIndex(index);
   };

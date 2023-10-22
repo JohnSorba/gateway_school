@@ -149,11 +149,11 @@ function Navbar() {
             </li>
 
             {/* EVENTS/NEWS DROPDOWN LINK */}
-            {/* <li onClick={toggleNavbar}>
-              <NavLink to="/" className="nav-link">
+            <li onClick={toggleNavbar}>
+              <NavLink to="/events" className="nav-link">
                 Events/News
               </NavLink>
-            </li> */}
+            </li>
 
             {/* CONTACT DROPDOWN LINK */}
             <li onClick={toggleNavbar}>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -8,7 +8,7 @@ import ScrollToTop from "./ScrollToTop";
 import HomePage from "../pages/HomePage";
 import AboutPage from "../pages/AboutPage";
 import Academic from "../pages/Academic";
-import Events from "../pages/Events";
+import Events, { EventPost } from "../pages/Events";
 import Contact from "../pages/Contact";
 
 // ABOUT SUB-PAGES
@@ -28,6 +28,8 @@ import { HeadTeacherSpeech } from "./StaffSlide";
 // ADMISSIONS AND CALENDAR PAGES
 import Admissions from "../pages/Admissions";
 import Calendar from "../pages/Calendar";
+
+// const { data } = useParams();
 
 function AppRouter() {
   return (
@@ -64,7 +66,9 @@ function AppRouter() {
         </Route>
 
         {/* OTHER ROUTES */}
-        <Route path="/events" element={<Events />} />
+        <Route path="events" element={<Events />} />
+        {/* <Route path=":data" element={<EventPost />} /> */}
+
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact/:section" element={<Contact />} />
       </Routes>

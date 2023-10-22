@@ -52,6 +52,9 @@ function About_Section() {
   return (
     <section className="about-section">
       <div className="about-container">
+        <h3 className="motto">
+          <span>Motto:</span> Nothing Ventured, Nothing Gained
+        </h3>
         <header>
           <h1 className="title">Gateway School</h1>
           <h2 className="subtitle">Empowering Young Minds, Shaping Futures</h2>

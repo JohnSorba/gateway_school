@@ -1,6 +1,7 @@
 .calendar-header,
 .admission-header,
-.contact-header {
+.contact-header,
+.events-header {
   max-width: 1368px;
   margin: 0 auto;
   margin-bottom: 5rem;
@@ -8,7 +9,8 @@
 
 .calendar-header,
 .admission-header,
-.contact-header {
+.contact-header,
+.events-header {
   position: relative;
   display: flex;
   align-items: center;
@@ -29,7 +31,8 @@
 
 .calendar-header::before,
 .admission-header::before,
-.contact-header::before {
+.contact-header::before,
+.events-header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -44,7 +47,8 @@
 
 .calendar-header-container,
 .admission-header-container,
-.contact-header-container {
+.contact-header-container,
+.events-header-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -52,7 +56,8 @@
 }
 .calendar-header h1,
 .admission-header h1,
-.contact-header h1 {
+.contact-header h1,
+.events-header h1 {
   font-size: 4.5rem;
   font-weight: 600;
   line-height: 1;
@@ -66,7 +71,8 @@
   font-weight: 600;
 }
 
-.calendar-main {
+.calendar-main,
+.events-main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem 4rem;
@@ -118,13 +124,15 @@ td:first-child {
 /* Media Query for mobile layout */
 @media (max-width: 768px) {
   .calendar-header h1,
-  .admission-header h1 {
+  .admission-header h1,
+  .contact-header h1 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
   }
   .calendar-header h2,
-  .admission-header h2 {
+  .admission-header h2,
+  .contact-header h2 {
     font-size: 1.1rem;
     font-weight: 600;
   }

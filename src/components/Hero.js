@@ -4,7 +4,7 @@ import "./Hero.css";
 
 const names = [
   { level: "Daycare", color: "green" },
-  { level: "Preparatory", color: "yellow" },
+  { level: "Nursery", color: "yellow" },
   { level: "Primary", color: "blue" },
   { level: "High", color: "" },
 ];

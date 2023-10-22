@@ -24,6 +24,14 @@
   font-weight: 600;
 }
 
+.about-container .motto {
+  font-size: 1rem;
+  font-style: italic;
+}
+.about-container .motto span {
+  font-weight: 700;
+}
+
 .about-section .subtitle {
   color: var(--main-bg-dark);
   font-size: 2rem;
