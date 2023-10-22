@@ -13,14 +13,14 @@ const content = {
       date: "Sep 5, 2023",
       summary:
         "Please note that our office will be closed on September 5th for the holiday. Normal operations will resume on the following day.",
-      link: "/announcements/holiday-closure",
+      link: "/events",
     },
     {
       title: "New Office Location",
       date: "Oct 10, 2023",
       summary:
         "We are relocating to a new office location to better serve our customers. Stay tuned for more details.",
-      link: "/announcements/new-office-location",
+      link: "/events",
     },
   ],
   Event: [
@@ -29,21 +29,21 @@ const content = {
       date: "Oct 20, 2023",
       summary:
         "Join us for our annual charity gala, where we aim to make a positive impact on our community. Purchase your tickets now!",
-      link: "/events/annual-charity-gala",
+      link: "/events",
     },
     {
       title: "Educational Seminar",
       date: "Nov 8, 2023",
       summary:
         "Attend our upcoming educational seminar featuring guest speakers and interactive workshops. Save the date!",
-      link: "/events/educational-seminar",
+      link: "/events",
     },
     {
       title: "Quiz Competition",
       date: "Oct 25, 2023",
       summary:
         "Attend our upcoming educational seminar featuring guest speakers and interactive workshops. Save the date!",
-      link: "/events/educational-seminar",
+      link: "/events",
     },
   ],
 };
@@ -54,21 +54,21 @@ const news = [
     date: "Aug 15, 2023",
     summary:
       "We are excited to announce the launch of our new website. Explore the latest updates and features!",
-    link: "/news/new-website-launched",
+    link: "/events",
   },
   {
     title: "New Scholarship Program",
     date: "Sep 2, 2023",
     summary:
       "Introducing our new scholarship program to support aspiring students in their educational journey.",
-    link: "/news/scholarship-program",
+    link: "/events",
   },
   {
     title: "Daniel Ndanema",
     date: "Sep 2, 2023",
     summary:
       "Introducing our new scholarship program to support aspiring students in their educational journey.",
-    link: "/news/scholarship-program",
+    link: "/events",
   },
 ];
 
