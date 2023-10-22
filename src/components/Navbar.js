@@ -107,12 +107,12 @@ function Navbar() {
                 id="dropdown2"
                 className={`dropdown ${dropdownOpen[1] ? "open" : ""}`}
               >
-                <li>
+                <li onClick={toggleNavbar}>
                   <NavLink to="/parent/calendar" className="dropdown-link">
                     Calendar
                   </NavLink>
                 </li>
-                <li>
+                <li onClick={toggleNavbar}>
                   <NavLink to="/parent/admission" className="dropdown-link">
                     Admissions
                   </NavLink>

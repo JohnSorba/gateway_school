@@ -1,3 +1,4 @@
+import { BiChevronDown, BiChevronRight, BiChevronUp } from "react-icons/bi";
 import "./AccordionStyles.css";
 import { useState } from "react";
 
@@ -34,7 +35,13 @@ function AccordionItem({ num, title, onOpen, curOpen, children }) {
     <div className={`item ${isOpen ? "open" : ""}`} onClick={handleToggle}>
       <p className="number">{num < 9 ? `0${num + 1}` : num + 1}</p>
       <p className="title">{title}</p>
-      <p className="icon">{isOpen ? "-" : "+"}</p>
+      <p className="icon">
+        {isOpen ? (
+          <BiChevronUp className="w-8 h-12" />
+        ) : (
+          <BiChevronRight className="w-8 h-12" />
+        )}
+      </p>
 
       {isOpen && <div className="content-box">{children}</div>}
     </div>

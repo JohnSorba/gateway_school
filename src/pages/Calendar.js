@@ -30,16 +30,17 @@ function Calendar() {
   return (
     <section className="calendar">
       <div className="calendar-header">
-        <h1>Academic Calendar</h1>
-        <h2>September to December 2023</h2>
-        <p>
-          <em>
-            Note: Specific dates and events may vary and should be updated each
-            term.
-          </em>
-        </p>
+        <div className="calendar-header-container">
+          <h1>Academic Calendar</h1>
+          <h2>September to December 2023</h2>
+        </div>
       </div>
       <main className="calendar-main">
+        <p>
+          <em>
+            Note: Specific dates and events may vary and are subject to change.
+          </em>
+        </p>
         <table>
           <thead>
             <tr>

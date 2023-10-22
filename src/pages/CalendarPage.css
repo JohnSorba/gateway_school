@@ -1,20 +1,69 @@
 .calendar-header,
-.calendar-main {
-  max-width: 1200px;
+.admission-header {
+  max-width: 1368px;
   margin: 0 auto;
+  margin-bottom: 5rem;
+}
+
+.calendar-header,
+.admission-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  color: var(--text-white);
+  padding: 0 2rem;
+  height: 40vh;
+  background-size: cover;
+  background-position: center center;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .calendar-header {
-  padding: 4rem 1rem;
+  background: url(/public/backyard3.jpg);
 }
 
-.calendar-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+.calendar-header::before,
+.admission-header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+  z-index: 1;
+}
+
+.calendar-header-container,
+.admission-header-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 2;
+}
+.calendar-header h1,
+.admission-header h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.calendar-header h2,
+.admission-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .calendar-main {
-  padding: 2rem 1rem 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem 4rem;
+}
+
+.calendar-main p {
+  margin-bottom: 2rem;
 }
 
 /* CALENDAR TABLE DESIGIN */
@@ -37,7 +86,7 @@ th {
 
 td {
   padding: 1rem 0.625rem;
-  border-bottom: 1px solid var(--subtle-background);
+  border-bottom: 1px solid var(--subtle-bg-dark);
 }
 
 tr:nth-child(even) {
@@ -58,6 +107,17 @@ td:first-child {
 
 /* Media Query for mobile layout */
 @media (max-width: 768px) {
+  .calendar-header h1,
+  .admission-header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  .calendar-header h2,
+  .admission-header h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
 }
 
 @media (max-width: 575px) {

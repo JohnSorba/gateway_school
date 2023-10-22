@@ -7,8 +7,10 @@ function Admissions() {
   return (
     <section className="admission-page">
       <div className="admission-header">
-        <h1>Admissions Page</h1>
-        <p>Learn about the entire admissions process for each level.</p>
+        <div className="admission-header-container">
+          <h1>Admissions Page</h1>
+          <p>Learn about the entire admissions process for each level.</p>
+        </div>
       </div>
       <div className="admission-main">
         <article>

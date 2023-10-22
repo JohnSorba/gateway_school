@@ -18,7 +18,11 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <article className="logo-col">
-          <img src="/gateway_logo.png" alt="Gateway Logo" />
+          <img
+            src="/gateway_logo.png"
+            alt="Gateway Logo"
+            className="text-white"
+          />
         </article>
 
         {/* OUR SCHOOL LINKS */}
@@ -106,7 +110,7 @@ function Footer() {
           </div>
 
           <div>
-            <h3>Contact Us</h3>
+            <h3>Get In Touch</h3>
             <address>
               <p>
                 <span>Tel: </span>
@@ -120,10 +124,22 @@ function Footer() {
         </article>
       </div>
       <article className="base">
+        <div className="base-logo">
+          <img
+            src="/gateway_logo.png"
+            alt="Gateway Logo"
+            className="text-white"
+          />
+          <div>
+            <p>Gateway</p>
+            <p>Preparatory</p>
+            <p>School</p>
+          </div>
+        </div>
         <div className="copyright">
-          Gateway PreSchool &copy;
-          <span className="year">{new Date().getFullYear()}</span>. All rights
-          reserved.
+          &copy;
+          <span className="year">{new Date().getFullYear()}</span> Gateway
+          Daycare, Nursery, Primary & High School
         </div>
         <div className="social-links">
           <FaFacebook size={24} />

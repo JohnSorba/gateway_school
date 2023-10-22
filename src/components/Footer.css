@@ -8,7 +8,7 @@
   background-color: var(--main-bg-dark);
   /* background: var(--gradient-bg); */
   /* background: var(--section-bg); */
-  padding: 5rem 2rem 2rem;
+  padding: 5rem 2rem 4rem;
 }
 
 .footer-container {
@@ -44,17 +44,40 @@
 
 .logo-col img {
   height: 200px;
-  width: 200px;
+  width: 220px;
 }
 
 .footer .base {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 0 0;
   border-top: 1px solid var(--text-white);
   max-width: 1200px;
   margin: 0 auto;
 }
+
+.footer .base img {
+  width: 75px;
+  height: 75px;
+}
+
+.base .base-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.base-logo > div {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lexend Tera", sans-serif;
+  letter-spacing: -1.5px;
+  font-size: 0.75rem;
+  text-align: left;
+  text-transform: uppercase;
+}
+
 .social-links {
   display: flex;
   justify-content: flex-start;
@@ -109,7 +132,8 @@
 
   .footer .base {
     flex-direction: column;
-    row-gap: 1rem;
-    padding: 1rem 0;
+    row-gap: 2rem;
+    padding: 2rem 0;
+    text-align: center;
   }
 }
