@@ -1,24 +1,40 @@
-import { Link, Outlet, useParams } from "react-router-dom";
-import { academicCurriculum } from "../data/ApplicationData";
+import { Link, Outlet, useLocation, useParams } from "react-router-dom";
 import { AcademicPageData } from "../data/ApplicationData";
 import "./Academic.css";
 import { useSubpage } from "../Contexts/SubpageContext";
+import { useEffect } from "react";
 
 function Academic() {
-  const { curPageIndex, getPageIndex } = useSubpage();
+  const { academicPageIndex, getAcademicPageIndex } = useSubpage();
+  const location = useLocation();
 
-  const { text } = useParams();
+  // Access pathname from location.
+  const currentPath = location.pathname;
 
-  console.log(text);
+  useEffect(() => {
+    // Code to run on component mount
+
+    // changes the content of the page based on the current URL path
+    switch (currentPath) {
+      case "/academic":
+        return getAcademicPageIndex(0);
+      case "/academic/daycare-nursery":
+        return getAcademicPageIndex(1);
+      case "/academic/primary-school":
+        return getAcademicPageIndex(2);
+      case "/academic/high-school":
+        return getAcademicPageIndex(3);
+    }
+  }, [currentPath]);
 
   const styles = {
-    backgroundImage: `url(${AcademicPageData[curPageIndex].image})`,
+    backgroundImage: `url(${AcademicPageData[academicPageIndex].image})`,
   };
   return (
     <section className="academic">
       <header className="academic-header" style={styles}>
         <section>
-          <h1>{AcademicPageData[curPageIndex].title}</h1>
+          <h1>{AcademicPageData[academicPageIndex].title}</h1>
         </section>
       </header>
       <section className="academic-page-container">
@@ -34,8 +50,10 @@ function Academic() {
                 <li key={index}>
                   <Link
                     to={data.url}
-                    className={`link ${curPageIndex === index ? "active" : ""}`}
-                    onClick={() => getPageIndex(index)}
+                    className={`link ${
+                      academicPageIndex === index ? "active" : ""
+                    }`}
+                    onClick={() => getAcademicPageIndex(index)}
                   >
                     {data.title}
                   </Link>

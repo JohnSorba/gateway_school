@@ -1,12 +1,40 @@
-import { useState } from "react";
-import { Outlet, Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Outlet, Link, useLocation } from "react-router-dom";
 import "./AboutPage.css";
 import { AboutPageData } from "../data/ApplicationData";
-import Navbar from "../components/Navbar";
 import { useSubpage } from "../Contexts/SubpageContext";
 
 function AboutPage() {
   const { curPageIndex, getPageIndex } = useSubpage();
+
+  const location = useLocation();
+
+  // Access pathname from location.
+  const currentPath = location.pathname;
+
+  useEffect(() => {
+    // Code to run on component mount
+
+    switch (currentPath) {
+      case "/about":
+        return getPageIndex(0);
+      case "/about/history":
+        return getPageIndex(1);
+      case "/about/mission":
+        return getPageIndex(2);
+      case "/about/administration":
+        return getPageIndex(3);
+      case "/about/gallery":
+        return getPageIndex(4);
+      case "/about/headteacher-speech":
+        return getPageIndex(5);
+    }
+
+    return () => {
+      // Code to run on component unmount
+    };
+  }, [currentPath]);
+
   return (
     <div id="about">
       <header className="header">

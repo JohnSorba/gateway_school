@@ -6,11 +6,16 @@ const SubpageContext = createContext();
 // Create Provider Component
 function SubpageProvider({ children }) {
   const [curPageIndex, setCurPageIndex] = useState(0);
+  const [academicPageIndex, setAcademicPageIndex] = useState(0);
 
   console.log(curPageIndex);
 
   const getPageIndex = (index) => {
     setCurPageIndex(index);
+  };
+
+  const getAcademicPageIndex = (index) => {
+    setAcademicPageIndex(index);
   };
 
   useEffect(() => {
@@ -26,7 +31,13 @@ function SubpageProvider({ children }) {
 
   return (
     <SubpageContext.Provider
-      value={{ curPageIndex, setCurPageIndex, getPageIndex }}
+      value={{
+        curPageIndex,
+        setCurPageIndex,
+        getPageIndex,
+        academicPageIndex,
+        getAcademicPageIndex,
+      }}
     >
       {children}
     </SubpageContext.Provider>
