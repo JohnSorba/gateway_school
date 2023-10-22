@@ -29,10 +29,10 @@ function Contact() {
     <div>
       <div id="contact-page">
         {/* Banner Image */}
-        <header id="header">
-          <div className="header-container">
-            <span className="text-blue-700 mb-4">Contact</span>
-            <h1>Gateway Daycare, Nursery, Primary, and High School</h1>
+        <header className="contact-header">
+          <div className="contact-header-container">
+            <span className="text-2xl text-blue-700 mb-4">Contact</span>
+            <h1>Gateway School</h1>
           </div>
         </header>
         {/* CONTACT DETAILS */}

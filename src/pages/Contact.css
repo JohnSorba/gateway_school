@@ -7,11 +7,7 @@
 }
 
 /* CONTACT Header */
-#header {
-  /* background: url(/public/devotion.jpg); */
-  background-size: cover;
-  background-position: center;
-}
+
 .header-container {
   padding: 7.5rem 0;
   max-width: 1200px;
@@ -19,9 +15,14 @@
   text-align: center;
 }
 
-.header-container h1 {
-  font-size: 2.5rem;
-  font-weight: 500;
+.contact-header {
+  background: url(/public/gateway_topview.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-header .contact-header-container h1 {
+  /* font-size: 4rem; */
   letter-spacing: -2px;
 }
 

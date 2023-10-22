@@ -4,7 +4,7 @@
 
 .academic-header {
   background-size: cover;
-  background-position: 10% -350px;
+  background-position: center;
 }
 
 .academic-header section {
@@ -85,18 +85,23 @@
 
 /* MEDIA QUERIES */
 
-@media (max-width: 992px) {
+@media (max-width: 1199px) {
   .academic-page-container main {
     border-top: 36px solid var(--main-bg-dark);
     border-top-right-radius: 36px;
-    padding: 2rem 1rem 0;
+    padding: 2rem 2rem 0;
   }
+}
+@media (max-width: 992px) {
 }
 
 @media (max-width: 768px) {
   .academic-page-container {
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr;
     row-gap: 2rem;
+  }
+  .sidebar-content {
+    order: -1;
   }
   .header-container h2 {
     text-align: center;
@@ -116,13 +121,7 @@
 }
 
 @media (max-width: 575px) {
-  .academic-page-container {
-    grid-template-columns: 1fr;
-  }
   .header-container h2 {
     font-size: 2.5rem;
-  }
-  .sidebar-content {
-    order: -1;
   }
 }
