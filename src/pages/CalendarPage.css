@@ -20,7 +20,9 @@
 }
 
 .calendar-header {
-  background: url(/public/backyard3.jpg);
+  background: url(/public/backyard.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .calendar-header::before,
@@ -49,10 +51,11 @@
   font-size: 4.5rem;
   font-weight: 600;
   margin-bottom: 1rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
 }
 .calendar-header h2,
 .admission-header h2 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 

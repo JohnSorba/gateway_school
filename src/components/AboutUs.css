@@ -1,5 +1,5 @@
 .about-section {
-  padding: 5rem 2rem 0;
+  padding: 5rem 1rem 0;
   background: var(--section-bg);
 }
 
@@ -83,15 +83,10 @@
 
 .img-grid .img-container {
   width: 100%;
-  /* padding-bottom: 100%; */
-  /* position: relative; */
-  /* overflow: hidden; */
 }
 
 .img-grid .img-container img {
-  /* width: 200px; */
   width: auto;
-  /* height: 200px; */
   height: auto;
   object-fit: cover;
   border-radius: 10px;
@@ -209,7 +204,7 @@
 
 @media (max-width: 992px) {
   .about-section {
-    padding: 7% 2rem 0;
+    padding: 5rem 1rem 0;
     background: var(--section-bg);
   }
 
@@ -238,6 +233,11 @@
 
   .mobile-grid {
     display: block;
+    /* padding: 0 1rem; */
+  }
+
+  .mobile-grid .slick-arrow {
+    display: none !important;
   }
 
   .values h1 {
@@ -256,7 +256,7 @@
 
 @media (max-width: 575px) {
   .about-section {
-    padding: 7% 1rem 0;
+    padding: 4rem 1rem 0;
     background: var(--section-bg);
   }
 

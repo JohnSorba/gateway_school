@@ -9,7 +9,7 @@ function Admissions() {
       <div className="admission-header">
         <div className="admission-header-container">
           <h1>Admissions Page</h1>
-          <p>Learn about the entire admissions process for each level.</p>
+          <h2>Learn about the entire admissions process for each level.</h2>
         </div>
       </div>
       <div className="admission-main">
