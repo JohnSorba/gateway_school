@@ -81,6 +81,10 @@
 
 /* Media Query for mobile layout */
 @media (max-width: 768px) {
+
+padding: 1.25rem 1.25rem;
+  padding-right: 1rem;
+
   .number {
     font-size: 1.05rem;
   }
