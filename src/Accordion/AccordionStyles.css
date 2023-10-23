@@ -82,8 +82,7 @@
 /* Media Query for mobile layout */
 @media (max-width: 768px) {
 
-padding: 1.25rem 1.25rem;
-  padding-right: 1rem;
+
 
   .number {
     font-size: 1.05rem;
@@ -95,7 +94,11 @@ padding: 1.25rem 1.25rem;
     font-weight: 500;
   }
 
-item {
+.item {
+
+padding: 1.25rem 1.25rem;
+  padding-right: 1rem;
+
  grid-template-columns: auto 1fr auto;
   column-gap: 1.25rem;
   
