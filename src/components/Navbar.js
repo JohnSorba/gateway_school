@@ -46,11 +46,11 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className={`navbar ${isSticky ? "" : ""}`}>
+    <nav className={`navbar ${isSticky ? "sticky" : ""}`}>
       <div className="navbar-container">
         <h1>
           {" "}
-          <NavLink to="/" className="text-3xl font-semibold text-white">
+          <NavLink to="/" className="logo-link">
             Gateway
           </NavLink>
         </h1>
@@ -58,7 +58,9 @@ function Navbar() {
         <div className={`menu ${isOpen ? "show" : ""}`}>
           <h1 className="navbar-logo" onClick={toggleNavbar}>
             {" "}
-            <NavLink to="/">Gateway</NavLink>
+            <NavLink to="/" className="logo-link">
+              Gateway
+            </NavLink>
           </h1>
           <ul className="nav-links">
             <li>

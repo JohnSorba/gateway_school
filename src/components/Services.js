@@ -95,9 +95,11 @@ function Services() {
               <div className="circle"></div>
             </div>
             <div>
-              {" "}
-              <img src={currentDetail.image} alt={currentDetail.title} />
-              {/* <p>Lorem Ipsum</p> */}
+              <div className="img">
+                {" "}
+                <img src={currentDetail.image} alt={currentDetail.title} />
+                {/* <p>Lorem Ipsum</p> */}
+              </div>
             </div>
           </>
         </div>

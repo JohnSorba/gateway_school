@@ -33,6 +33,11 @@ function Contact() {
           <div className="contact-header-container">
             <span className="text-2xl text-blue-700 mb-4">Contact</span>
             <h1>Gateway School</h1>
+            <div className="social-container">
+              <FaFacebook className="w-6 h-6 text-blue-700" />
+              <FaInstagram className="w-6 h-6 text-pink-700" />
+              <FaTwitter className="w-6 h-6 text-blue-400" />{" "}
+            </div>
           </div>
         </header>
         {/* CONTACT DETAILS */}
@@ -40,47 +45,38 @@ function Contact() {
           <div className="contact-details-container">
             <div>
               <FaLocationArrow className="w-12 h-12 text-yellow-500" />
-              <p className="text">Address</p>
-              <p>
-                81c Fort Street, <br />
-                Off Circular Rd. Freetown
-              </p>
+              <div>
+                <p className="text">Address</p>
+                <p>
+                  81c Fort Street, <br />
+                  Off Circular Rd. Freetown
+                </p>
+              </div>
             </div>
             <div>
               <FaPhoneAlt className="w-12 h-12 text-green-500" />
-              <p className="text">Phone</p>
-              <p>00 (232) 34 243599</p>
+              <div>
+                <p className="text">Phone</p>
+                <p>00 (232) 34 243599</p>
+              </div>
             </div>
             <div>
               <GrMail className="w-12 h-12 text-blue-500" />
-              <p className="text">Email</p>
-              <p>gateway1990@gmail.com</p>
+              <div>
+                <p className="text">Email</p>
+                <p>gateway1990@gmail.com</p>
+              </div>
             </div>
             <div>
               <BiTimeFive className="w-12 h-12 text-orange-500" />
-              <p className="text">Opening Hours</p>
-              <p>8:00 AM - 5:00 PM</p>
+              <div>
+                <p className="text">Opening Hours</p>
+                <p>8:00 AM - 5:00 PM</p>
+              </div>
             </div>
           </div>
         </section>
-        {/* SOCIAL MEDIA */}
-        <section id="social-links">
-          <h1>Follow Us</h1>
-          <div className="social-container">
-            <div>
-              <FaFacebook className="w-12 h-12 text-blue-700" />
-              <p>Visit Facebook</p>
-            </div>
-            <div>
-              <FaInstagram className="w-12 h-12 text-pink-700" />
-              <p>Visit Instagram</p>
-            </div>
-            <div>
-              <FaTwitter className="w-12 h-12 text-blue-400" />
-              <p>Visit Twitter</p>
-            </div>
-          </div>
-        </section>{" "}
+
         {/* FAQ's */}
         <section id="faq">
           <div className="faq-container">

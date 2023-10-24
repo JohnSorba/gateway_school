@@ -22,7 +22,6 @@
 }
 
 .contact-header .contact-header-container h1 {
-  /* font-size: 4rem; */
   letter-spacing: -2px;
 }
 
@@ -32,24 +31,36 @@
 
 .contact-details-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 3rem 8rem;
+  gap: 3rem 0;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .contact-details-container > div {
   display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
-  gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-end;
+  gap: 1.25rem;
   text-align: center;
 }
 
-.contact-details-container p {
+.contact-details-container > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.contact-details-container p:first-child {
   font-size: 0.875rem;
+}
+.contact-details-container p {
+  font-size: 1.05rem;
+  text-align: left;
 }
 
 .contact-details-container .text {
@@ -61,27 +72,13 @@
 #social-links {
   padding: 5rem 2rem;
 }
-#social-links h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin-bottom: 2rem;
-}
+
 .social-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 2rem 8rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.social-container > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-items: center;
-  gap: 2rem;
-  text-align: center;
+  gap: 2rem 2rem;
+  margin-top: 1.5rem;
 }
 
 /* FAQ */
@@ -128,6 +125,9 @@
 }
 
 @media (max-width: 768px) {
+  #contact-details {
+    padding: 0rem 2rem 2rem;
+  }
 }
 
 @media (max-width: 575px) {
