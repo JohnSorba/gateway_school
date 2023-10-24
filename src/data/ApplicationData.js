@@ -221,7 +221,12 @@ export const serviceDetails = [
   {
     title: "Nursery",
     descripiton: "Preparing young learners for a lifetime of discovery.",
-    options: ["Preschool Curriculum", "Early Literacy", "Outdoor Activities"],
+    options: [
+      "Preschool Curriculum",
+      "Early Literacy",
+      "Outdoor Activities",
+      "Playgroup",
+    ],
     link: "academic/daycare-nursery",
     image:
       "https://cdn.pixabay.com/photo/2017/04/05/08/18/kindergarten-2204239_640.jpg",
