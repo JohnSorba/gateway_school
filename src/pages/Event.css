@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* align-items: stretch; */
-  gap: 2rem 4rem;
+  gap: 2rem 2rem;
 }
 
 .event-item,
@@ -49,7 +49,7 @@
   .event-list {
     grid-template-columns: 1fr 1fr;
     /* align-items: stretch; */
-    row-gap: 2rem;
+    gap: 2rem 2rem;
   }
 }
 
