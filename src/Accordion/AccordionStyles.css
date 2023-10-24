@@ -81,13 +81,27 @@
 
 /* Media Query for mobile layout */
 @media (max-width: 768px) {
+
+
+
   .number {
-    font-size: 1.125rem;
+    font-size: 1.05rem;
   }
 
   .title,
   .icon {
-    font-size: 1.125rem;
+    font-size: 1.05rem;
     font-weight: 500;
   }
+
+.item {
+
+padding: 1.25rem 1.25rem;
+  padding-right: 1rem;
+
+ grid-template-columns: auto 1fr auto;
+  column-gap: 1.25rem;
+  
+}
+
 }

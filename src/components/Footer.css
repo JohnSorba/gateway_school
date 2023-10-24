@@ -100,7 +100,7 @@
 
 @media (max-width: 1024px) {
   .footer {
-    padding: 1.5rem 5rem;
+    padding: 4.5rem 1.5rem;
   }
 
   .footer-container {
@@ -110,7 +110,7 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 1.5rem 2rem;
+    padding: 3.5rem 1.25rem;
   }
 
   .footer-container {
@@ -120,7 +120,7 @@
 
 @media (max-width: 575px) {
   .footer {
-    padding: 3.5rem 1rem;
+    padding: 3.5rem 1.5rem;
   }
 
   .footer-container {

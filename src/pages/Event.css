@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   /* align-items: stretch; */
-  gap: 2rem 2rem;
+  gap: 3rem 2rem;
 }
 
 .event-item,
@@ -41,7 +41,10 @@
 }
 
 /* TABLET SCREENS */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
+  .event-list {
+    gap: 2rem 1.5rem;
+  }
 }
 
 /* Media Query for mobile layout */
