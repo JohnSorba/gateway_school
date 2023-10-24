@@ -75,7 +75,7 @@
 .events-main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 1rem 4rem;
+  padding: 0 2rem 4rem;
 }
 
 .calendar-main p {
@@ -118,26 +118,26 @@ td:first-child {
 }
 
 /* TABLET SCREENS */
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
+  .calendar-main,
+  .events-main {
+    padding: 0 1.5rem 4rem;
+  }
 }
 
 /* Media Query for mobile layout */
 @media (max-width: 768px) {
-
-.calendar-header,
-.admission-header,
-.contact-header,
-.events-header {
-  height: 15rem;
-  
-}
-
-
+  .calendar-header,
+  .admission-header,
+  .contact-header,
+  .events-header {
+    height: 15rem;
+  }
 
   .calendar-header h1,
   .admission-header h1,
   .contact-header h1,
-   .events-header h1 {
+  .events-header h1 {
     font-size: 2.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
@@ -163,5 +163,10 @@ td:first-child {
 
   .month {
     transform: rotate(-90deg);
+  }
+
+  .calendar-main,
+  .events-main {
+    padding: 0 1.5rem 4rem;
   }
 }

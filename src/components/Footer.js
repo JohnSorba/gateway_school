@@ -138,8 +138,8 @@ function Footer() {
         </div>
         <div className="copyright">
           &copy;
-          <span className="year">{new Date().getFullYear()}</span> Gateway
-          Daycare, Nursery, Primary & High School
+          <span className="year"> 1990 - {new Date().getFullYear()}</span>{" "}
+          Gateway Daycare, Nursery, Primary & High School
         </div>
         <div className="social-links">
           <FaFacebook size={24} />

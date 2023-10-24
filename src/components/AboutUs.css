@@ -22,6 +22,14 @@
   color: var(--main-bg-dark);
   font-size: 5rem;
   font-weight: 600;
+  background: linear-gradient(
+      to bottom var(--section-bg),
+      var(--text-white),
+      var(--section-bg)
+    )
+    repeat-y;
+  background-position: center;
+  background-size: cover;
 }
 
 .about-container .motto {
