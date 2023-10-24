@@ -91,6 +91,12 @@
 }
 
 @media (max-width: 992px) {
+  .slideStyles {
+    border-bottom-right-radius: 0;
+  }
+  .slideStyles::before {
+    border-bottom-right-radius: 0;
+  }
 }
 
 @media (max-width: 768px) {

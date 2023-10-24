@@ -246,6 +246,9 @@
 }
 
 @media (max-width: 768px) {
+  .about-section {
+    border-radius: 0;
+  }
   .about-section .img-grid {
     display: none;
   }
