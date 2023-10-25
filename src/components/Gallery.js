@@ -9,7 +9,7 @@ function Gallery() {
     <section id="gallery">
       <div className="main-container">
         <header>
-          <h2>Voices of Inspiration: Pupil's Speak</h2>
+          <h2>Photo Gallery</h2>
           <p>
             At Gateway School, life is a vibrant tapestry of learning,
             friendship, and personal growth. We foster an environment where
@@ -21,7 +21,6 @@ function Gallery() {
         </header>
 
         <div className="gallery-main-container">
-          <Testimonials />
           <GalleryModal images={images} />
         </div>
       </div>

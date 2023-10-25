@@ -1,41 +1,80 @@
 /* TESTIMONIAL SECTION */
+.testimonial-section {
+  padding: 4rem 1rem 7rem;
+}
+
+.testimonial-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
 .testimonial-container h1 {
   font-size: 2.5rem;
   font-weight: 600;
-  color: var(--primary-darkBlue);
-  margin-bottom: 2rem;
+  color: var(--main-bg-dark);
+  margin-bottom: 3rem;
 }
 
 .testimonial-flex-container {
-  display: flex;
+  /* display: flex !important; */
   justify-content: space-around;
-  align-items: center;
+  align-items: baseline;
   row-gap: 3rem;
   flex-flow: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.testimony {
-  display: flex;
+.testimonial-flex-container .slick-arrow {
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  background-color: rgb(200, 228, 255);
+  background-color: var(--primary-darkBlue);
+  border-radius: 50px;
+  /* padding: 2rem; */
+  /* font-size: 5rem; */
+  /* display: inline-block !important; */
+  width: 50px;
+  height: 50px;
+}
+
+.testimonial-flex-container .slick-prev {
+  left: -100px;
+}
+.testimonial-flex-container .slick-next {
+  right: -100px;
+}
+
+.testimonial-flex-container .testimony {
+  display: flex !important;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  gap: 1rem;
   font-size: 0.9rem;
+  padding: 0 1.25rem;
   width: 275px;
 }
 
 .testimony img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
 
 .testimony q {
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
   font-style: italic;
   opacity: 0.7;
+}
+
+.testimony .line {
+  /* width: 50px; */
+  height: 3px;
+  background-color: var(--subtle-background);
 }
 
 .testimony h3 {
@@ -45,4 +84,27 @@
 
 .testimony span {
   color: gray;
+}
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+  .testimonial-section {
+    padding: 4rem 1rem;
+  }
+
+  .testimonial-container h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .testimonial-container h1 {
+    font-size: 1.75rem;
+  }
+
+  .testimonial-flex-container .slick-arrow {
+    display: none !important;
+  }
 }

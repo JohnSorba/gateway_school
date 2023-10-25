@@ -8,6 +8,8 @@ import Gallery from "../components/Gallery";
 import StaffSlide from "../components/StaffSlide";
 import ContactUs from "../components/ContactUs";
 import News from "../components/News";
+import Testimonials from "../components/Testimonials";
+import Admission from "../components/Admission";
 
 function HomePage({ isOpen, isDropdownOpen, toggleDropdown, toggleNavbar }) {
   return (
@@ -23,7 +25,9 @@ function HomePage({ isOpen, isDropdownOpen, toggleDropdown, toggleNavbar }) {
       <Services />
       <StaffSlide />
       {/* <AccApp /> */}
+      <Testimonials />
       <Gallery />
+      <Admission />
 
       <ContactUs />
     </div>

@@ -60,7 +60,7 @@ function AppRouter() {
         </Route>
 
         {/* PARENT PAGE ROUTES */}
-        <Route path="/parent">
+        <Route path="parent">
           <Route path="admission" element={<Admissions />} />
           <Route path="calendar" element={<Calendar />} />
         </Route>
@@ -69,8 +69,8 @@ function AppRouter() {
         <Route path="events" element={<Events />} />
         {/* <Route path=":data" element={<EventPost />} /> */}
 
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/contact/:section" element={<Contact />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="contact/:section" element={<Contact />} />
       </Routes>
       <Footer />
     </BrowserRouter>

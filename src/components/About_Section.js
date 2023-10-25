@@ -57,10 +57,11 @@ function About_Section() {
         </h3>
         <header>
           <h1 className="title">Gateway School</h1>
-          <h2 className="subtitle">Empowering Young Minds, Shaping Futures</h2>
+          {/* <h2 className="subtitle">Empowering Young Minds, Shaping Futures</h2> */}
+          <h2 className="subtitle">A Symbol of Excellence</h2>
           <p className="intro">
             <span className="text-2xl">W</span>elcome to Gateway School, where
-            knowledge meets opportunity and young minds flourish. As a beacon of
+            knowledge meets opportunity and young minds flourish. As a symbol of
             educational excellence in Sierra Leone, Gateway School has been
             nurturing the leaders of tomorrow since 1990. Our commitment to
             holistic education, innovation, and community engagement sets us

@@ -21,19 +21,22 @@
 }
 
 .main-container p {
-  width: 70ch;
+  width: 100ch;
 }
 
 .gallery-main-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
+  grid-template-columns: 1fr;
 }
 
 .gallery-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 0.5rem;
+  gap: 1.5rem;
+}
+
+.gallery-container .slick-slider {
+  width: 100%;
 }
 
 .gallery-item {

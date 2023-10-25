@@ -1,4 +1,7 @@
 import { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import {
   ChevronLeftIcon,
@@ -39,9 +42,22 @@ function GalleryModal({ images }) {
       setCurrentIndex(currentIndex + 1);
     }
   };
+
+  const settings = {
+    className: "center",
+    centerMode: true,
+    infinite: true,
+    centerPadding: "1px",
+    slidesToShow: 3,
+    speed: 500,
+    rows: 2,
+    slidesPerRow: 2,
+  };
+
   return (
     <div>
       <div className="gallery-container">
+        {/* <Slider {...settings}> */}
         {images.map((image, index) => (
           <div
             key={index}
@@ -51,6 +67,7 @@ function GalleryModal({ images }) {
             <img src={image} alt={`Image ${index}`} />
           </div>
         ))}{" "}
+        {/* </Slider> */}
         {/* Modal for displaying the clicked image */}
         {isOpen && (
           <div className="gallery-modal">
