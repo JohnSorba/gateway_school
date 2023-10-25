@@ -116,6 +116,7 @@ function Footer() {
                 <span>Tel: </span>
                 <a href="tel:0023234243599">00 (232) 34 243599</a>
                 <br />
+                <br />
                 <span>Email: </span>
                 <a href="mailto:hello@gateway.com">hello@gateway.com</a>
               </p>
