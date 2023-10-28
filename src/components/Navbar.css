@@ -2,7 +2,6 @@
 .navbar {
   position: relative;
   width: 100%;
-  overflow: hidden;
   /* height: 50px; */
   padding: 0 2rem;
   margin: 0 auto;
@@ -148,10 +147,10 @@ li:hover > .dropdown {
 }
 
 .dropdown-link:hover {
-  color: var(--primary-darkBlue);
+  color: var(--main-bg-dark);
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.1);
-  transition: background-color 0.05s ease-in;
+  background-color: rgba(0, 0, 0, 0.05);
+  transition: background-color 0.15s ease-in;
 }
 
 .nav-icon {

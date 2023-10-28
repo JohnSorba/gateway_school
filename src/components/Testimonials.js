@@ -10,7 +10,7 @@ function Testimonials() {
     dots: true,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 10000,
     pauseOnHover: true,

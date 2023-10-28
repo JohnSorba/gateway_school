@@ -9,7 +9,7 @@ function Gallery() {
     <section id="gallery">
       <div className="main-container">
         <header>
-          <h2>Photo Gallery</h2>
+          <h2>Life at Gateway</h2>
           <p>
             At Gateway School, life is a vibrant tapestry of learning,
             friendship, and personal growth. We foster an environment where
