@@ -7,12 +7,10 @@
 .services-container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 0;
   background-color: var(--blue);
   background-color: var(--tertiary-color);
   border-radius: 25px;
-
-  /* outline: 1px solid black; */
 }
 
 .services-container-inner {
@@ -22,7 +20,7 @@
 
 /* SERVICES HEADER */
 .services-header {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
 .services-header h1 {
@@ -69,13 +67,12 @@
 /* SERVICES GRID */
 .services-grid {
   display: grid;
-  grid-template-columns: 1fr 550px;
-  /* grid-template-rows: 500px; */
-  column-gap: 4rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 4rem;
   align-items: center;
   position: relative;
   z-index: 100;
-  transition: grid-template-rows 0.2s all;
+  /* height: 500px; */
 }
 
 .services {
@@ -84,11 +81,8 @@
 }
 
 .service-description {
-  font-size: 1rem;
-  padding: 2.5rem;
-  border-radius: 15px;
-  /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); */
-  /* box-shadow: 2px 2px 6px var(--content-background); */
+  font-size: 1.05rem;
+  padding: 1rem;
 }
 
 .service-description h2 {
@@ -106,7 +100,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .service-description ul li {
@@ -119,7 +113,7 @@
   color: var(--primary-darkBlue);
 }
 
-.service-description button {
+.service-description .service-link {
   padding: 0.5rem 1.25rem;
   font-weight: 600;
   color: var(--text-white);
@@ -130,21 +124,18 @@
   transition: color 0.1s ease-in-out;
 }
 
-.service-description button:hover {
+.service-description .service-link:hover {
   color: var(--complementary-accent);
   background-color: transparent;
   border-color: var(--complementary-accent);
 }
 
-.service-description .flex-items {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-}
-
 .nav-btn-container {
   display: flex;
-  gap: 0.75rem;
+  gap: 3rem;
+  justify-self: center;
+  grid-column: span 2;
+  padding: 1rem 0;
 }
 
 .nav-btn-container .icon {
@@ -153,26 +144,27 @@
   border-radius: 100%;
   color: var(--complementary-accent);
   cursor: pointer;
-  transition: color 0.1s ease-in;
+  transition: color 0.05s ease-in-out, transform 0.2s ease-in-out;
 }
 
 .nav-btn-container .icon:hover {
   background-color: var(--complementary-accent);
   color: white;
 }
-
-.services-grid .img {
-  border-radius: 10px;
-  height: 100%;
-  align-self: stretch;
-  animation: slideIn 1.4s;
+.nav-btn-container .icon-left:hover {
+  transform: translateX(-5px);
 }
-.services-grid .img img {
-  border-radius: 10px;
-  border-bottom-right-radius: 250px;
+.nav-btn-container .icon-right:hover {
+  transform: translateX(5px);
+}
+
+.services-grid img {
+  border-radius: 25px;
+  border-bottom-right-radius: 200px;
   object-fit: cover;
   height: 100%;
   align-self: stretch;
+  animation: slideIn 1.4s;
 }
 
 /* @keyframes slideIn {
@@ -237,6 +229,15 @@
   .services-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .circle-blue {
+    top: -35px;
+    right: 50px;
+  }
+  .circle-yellow {
+    top: 10px;
+    right: -20px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -246,15 +247,36 @@
   #services-section {
     padding: 5rem 0rem;
   }
+  .service-group {
+    display: none;
+  }
 
   .services-container {
-    padding: 3rem 1rem;
+    padding: 3rem 1rem 1.5rem;
     border-radius: 15px;
   }
 
-  .services-grid .img img {
+  .services-grid {
+    row-gap: 1rem;
+  }
+
+  .services-grid img {
     order: -1;
     border-radius: 10px;
+  }
+
+  .nav-btn-container {
+    grid-column: span 1;
+    padding: 0.25rem 0;
+  }
+
+  .nav-btn-container .icon {
+    padding: 0.05rem;
+  }
+
+  .nav-btn-container .icon:hover {
+    background-color: none;
+    color: white;
   }
 
   .circle-blue {
@@ -285,8 +307,6 @@
   }
 
   .service-group {
-    flex-direction: column;
-    gap: 2rem;
     display: none;
   }
 
@@ -294,8 +314,8 @@
     grid-template-columns: 1fr;
     row-gap: 1rem;
   }
-  .service-description button {
-    padding: 0.25rem 0.75rem;
+  .service-description .service-link {
+    padding: 0.25rem 0.5rem;
     font-size: 1.1rem;
   }
 }

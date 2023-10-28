@@ -17,8 +17,6 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto 40px;
   width: 100%;
-  /* border-top-left-radius: 300px; */
-  border-bottom-right-radius: 200px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }
 
@@ -36,8 +34,6 @@
     rgba(0, 0, 0, 0.4)
   );
   z-index: 1;
-  /* border-top-left-radius: 300px; */
-  border-bottom-right-radius: 200px;
 }
 
 .dot-container {

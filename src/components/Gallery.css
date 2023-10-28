@@ -133,6 +133,10 @@
 }
 
 @media (max-width: 992px) {
+  .main-container p {
+    width: auto;
+    text-align: justify;
+  }
 }
 
 @media (max-width: 768px) {

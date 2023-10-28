@@ -5,6 +5,7 @@ import "./Services.css";
 import { NavLink } from "react-router-dom";
 import { serviceDetails } from "../data/ApplicationData";
 import { useSubpage } from "../Contexts/SubpageContext";
+import { BiLeftArrowAlt, BiRightArrow, BiRightArrowAlt } from "react-icons/bi";
 
 function Services() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -60,53 +61,47 @@ function Services() {
           </header>
 
           <div className="services-grid">
-            <>
-              <div className="service-description">
-                <h2>{currentDetail.title}</h2>
-                <p>{currentDetail.descripiton}</p>
-                <ul>
-                  {currentDetail.options.map((option, index) => (
-                    <li key={option[index]}>
-                      <span>
-                        <CheckBadgeIcon className="h-6 w-6 icon" />
-                      </span>
-                      {option}
-                    </li>
-                  ))}
-                </ul>
-                <div className="flex-items">
-                  <NavLink
-                    to={currentDetail.link}
-                    onClick={() => goToIndex(currentIndex)}
-                  >
-                    <button>Learn More</button>
-                  </NavLink>
-                  <div className="nav-btn-container">
-                    <ChevronLeftIcon
-                      className="w-8 h-8 icon"
-                      onClick={showPrevious}
-                    />
-                    <ChevronRightIcon
-                      className="w-8 h-8 icon"
-                      onClick={showNext}
-                    />
-                  </div>
-                </div>
+            <div className="service-description">
+              <h2>{currentDetail.title}</h2>
+              <p>{currentDetail.descripiton}</p>
+              <ul>
+                {currentDetail.options.map((option, index) => (
+                  <li key={option[index]}>
+                    <span>
+                      <CheckBadgeIcon className="h-6 w-6 icon" />
+                    </span>
+                    {option}
+                  </li>
+                ))}
+              </ul>
 
-                <div className="circle"></div>
-                <div className="square"></div>
-                <div className="square-green"></div>
-                <div className="circle-blue"></div>
-                <div className="circle-yellow"></div>
-              </div>
-              <div>
-                <div className="img">
-                  {" "}
-                  <img src={currentDetail.image} alt={currentDetail.title} />
-                  {/* <p>Lorem Ipsum</p> */}
-                </div>
-              </div>
-            </>
+              <NavLink
+                to={currentDetail.link}
+                onClick={() => goToIndex(currentIndex)}
+                className="service-link"
+              >
+                Learn More
+              </NavLink>
+
+              <div className="circle"></div>
+              <div className="square"></div>
+              <div className="square-green"></div>
+              <div className="circle-blue"></div>
+              <div className="circle-yellow"></div>
+            </div>
+
+            <img src={currentDetail.image} alt={currentDetail.title} />
+
+            <div className="nav-btn-container">
+              <BiLeftArrowAlt
+                className="w-10 h-10 icon icon-left"
+                onClick={showPrevious}
+              />
+              <BiRightArrowAlt
+                className="w-10 h-10 icon icon-right"
+                onClick={showNext}
+              />
+            </div>
           </div>
         </div>
       </div>

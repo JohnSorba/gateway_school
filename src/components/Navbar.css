@@ -2,6 +2,7 @@
 .navbar {
   position: relative;
   width: 100%;
+  overflow: hidden;
   /* height: 50px; */
   padding: 0 2rem;
   margin: 0 auto;
@@ -179,6 +180,15 @@ li:hover > .dropdown {
     margin-bottom: 2rem;
   }
 
+  .navbar.sticky .nav-links > li {
+    padding: 0.25rem 0rem;
+  }
+
+  .navbar.sticky .nav-link {
+    padding: 0;
+    border-bottom: none;
+  }
+
   /* MENU */
 
   .menu {
@@ -233,7 +243,7 @@ li:hover > .dropdown {
     justify-content: space-between;
     color: var(--main-bg-dark);
     width: 100%;
-    font-size: 1.1rem;
+    /* font-size: 1.1rem; */
     margin: 0;
     padding: 0;
     /* border-bottom: 2px solid white; */
@@ -270,7 +280,7 @@ li:hover > .dropdown {
 
   .dropdown.open {
     display: block;
-    max-height: 500px;
+    /* max-height: 500px; */
     border-top: none;
   }
 
