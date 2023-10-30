@@ -36,11 +36,18 @@
 }
 
 @media (max-width: 992px) {
+  .admission-home {
+    padding: 7.5rem 1rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .admission-home {
+    padding: 5rem 1rem;
+  }
+
   .admission-container-home h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 2.25rem;
   }
 
