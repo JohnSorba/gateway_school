@@ -63,12 +63,14 @@ export const AcademicPageData = [
   },
   {
     title: "Daycare & Nursery",
-    image: "/backyard.jpg",
+    image: "/daycare_center.png",
     url: "/academic/daycare-nursery",
   },
   {
     title: "Primary School",
     image: "/assemblyKid.jpg",
+    image: "/three_pupils_in_a_classroom.png",
+    image: "/classroom_setting.png",
     url: "/academic/primary-school",
   },
   {
@@ -215,8 +217,7 @@ export const serviceDetails = [
     descripiton: "A nurturing environment for early childhood development.",
     options: ["Infant Care", "Toddler Programs", "Early Learning", "Playgroup"],
     link: "academic/daycare-nursery",
-    image:
-      "https://media.istockphoto.com/id/1427459436/photo/a-happy-female-teacher-sitting-and-playing-hand-games-with-a-group-of-little-schoolchildren.webp?b=1&s=612x612&w=0&k=20&c=GM4W4y1dFf0DJDFtzjzsYDfUkW-QacfZcPwSUwbxeBc=",
+    image: "/daycare_center.png",
   },
   {
     title: "Nursery",
@@ -241,8 +242,8 @@ export const serviceDetails = [
       "Physical Education",
     ],
     link: "academic/primary-school",
-    image:
-      "https://cdn.pixabay.com/photo/2016/02/03/18/54/students-1177710_640.jpg",
+    image: "/classroom_setting.png",
+    // image: "/three pupils in a classroom.png",
   },
   {
     title: "High School",
@@ -266,12 +267,18 @@ export const images = [
   "/assemblyKid.jpg",
   "/uncAug.jpg",
   "/busKids.jpg",
-  "/gateway_topview.jpg",
-  "/backyard3.jpg",
+  // "/gateway_topview.jpg",
+  // "/backyard3.jpg",
   "/devotion2.jpg",
   "/teachers.jpg",
   "/awards_ceremony.jpg",
   "/awards_ceremony2.jpg",
+  "/a baby with West African descent.png",
+  "/daycare_center.png",
+  "/three_pupils_in_a_classroom.png",
+  "/focused male grade 6 primary school pupil.png",
+  "/young male student in grade 6 .png",
+  "/classroom_setting.png",
 ];
 
 // ABOUT SECTION SLIDESHOW IMAGES

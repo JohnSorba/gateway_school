@@ -1,6 +1,8 @@
 .admission-home {
-  padding: 5rem 1rem 8rem;
-  background: var(--main-bg-dark);
+  padding: 12.5rem 1rem;
+  background: url(/public/three\ girls\ of\ Sierra\ Leonean\ descent.png);
+  background-size: cover;
+  background-position: top center;
 }
 
 .admission-container-home {
@@ -14,6 +16,7 @@
   color: var(--text-white);
   font-weight: 600;
   margin-bottom: 3rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 .admission-link {

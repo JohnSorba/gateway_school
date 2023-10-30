@@ -162,7 +162,8 @@
   border-radius: 25px;
   border-bottom-right-radius: 200px;
   object-fit: cover;
-  height: 100%;
+  height: 350px;
+  width: 100%;
   align-self: stretch;
   animation: slideIn 1.4s;
 }

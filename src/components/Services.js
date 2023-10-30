@@ -5,7 +5,7 @@ import "./Services.css";
 import { NavLink } from "react-router-dom";
 import { serviceDetails } from "../data/ApplicationData";
 import { useSubpage } from "../Contexts/SubpageContext";
-import { BiLeftArrowAlt, BiRightArrow, BiRightArrowAlt } from "react-icons/bi";
+import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
 
 function Services() {
   const [currentIndex, setCurrentIndex] = useState(0);
