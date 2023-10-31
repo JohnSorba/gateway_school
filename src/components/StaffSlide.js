@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { profileData } from "../data/ApplicationData";
 import "./StaffSlide.css";
 import { useSubpage } from "../Contexts/SubpageContext";
+import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 function StaffSlide() {
   const { setCurPageIndex } = useSubpage();
@@ -52,21 +53,17 @@ function StaffSlide() {
               educators; they are mentors, guides, and role models who play a
               pivotal role in shaping the educational journey of our students.
               Committed to excellence, they go above and beyond to create a
-              nurturing and inspiring learning environment. From our passionate
-              teachers who impart knowledge and instill a love for learning to
-              our dedicated support staff who ensure a safe and organized
-              campus, every member of our team contributes to the holistic
-              development of our students.
-              <Link
-                to="/about/headteacher-speech"
-                className="read-more"
-                onClick={goToSpeech}
-              >
-                {" "}
-                read more...
-              </Link>
+              nurturing and inspiring learning environment.
             </blockquote>
           </article>
+          <Link
+            to="/about/headteacher-speech"
+            className="read-more btn"
+            onClick={goToSpeech}
+          >
+            {" "}
+            Read More <ArrowRightIcon className="h-4 w-4" />
+          </Link>
         </div>
       </div>
     </section>
@@ -80,7 +77,7 @@ export function HeadTeacherSpeech() {
   return (
     <>
       <article className="headteacher-speech">
-        <h1>Head Teacher's Remarks</h1>
+        <h1>Headteacher's Remarks</h1>
 
         <div className="heading">
           <img src="/headteacher_img.jpg" alt="Janet Hinga" />

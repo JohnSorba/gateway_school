@@ -1,8 +1,8 @@
 #staff-section {
   padding: 7% 1rem;
-  background: url(/public/cool-background.svg);
+  /* background: url(/public/cool-background.svg);
   background-size: cover;
-  background-position: 0% 0;
+  background-position: 0% 0; */
 }
 
 .staff-container {
@@ -31,8 +31,8 @@
 }
 
 .staff-container-flex {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
   margin-bottom: 4rem;
 }
@@ -53,7 +53,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 100%;
   transition: 0.2s all;
 }
 
@@ -69,8 +69,9 @@
 
 .staff-container-flex figcaption {
   position: absolute;
-  left: 5px;
-  bottom: 10px;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
   z-index: 100;
   color: var(--text-white);
   background-color: rgba(0, 0, 0, 0.2);
@@ -86,16 +87,16 @@
 }
 
 .staff-container-flex figcaption p:first-child {
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-left: 5px solid var(--text-white);
   padding-left: 10px;
 }
 
 .staff-container-flex figcaption p:nth-child(2) {
-  font-size: 1.1rem;
+  font-size: 1rem;
   border-left: 5px solid var(--text-white);
   padding-left: 10px;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .figcaption-link {
@@ -111,21 +112,24 @@
 /* PRINCIPAL's SPEECH */
 .speech-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
-  /* align-items: stretch; */
-  /* max-width: 900px; */
+  grid-template-columns: 200px 1fr 150px;
+  gap: 2rem;
+  align-items: center;
+  padding: 1rem 1rem;
   margin: 0 auto;
+  border: 6px solid var(--subtle-background);
+  border-radius: 100px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.02);
 }
 
 .speech-grid article:first-child {
   overflow: hidden;
-  border-radius: 15px;
+  border-radius: 100px;
 }
 
 .speech-grid img {
   object-fit: cover;
-  border-radius: 15px;
+  border-radius: 100px;
   transition: 0.2s all;
 }
 .speech-grid img:hover {
@@ -133,7 +137,7 @@
 }
 
 .speech-grid h3 {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1rem;
 }
@@ -144,10 +148,19 @@
 }
 
 .read-more {
-  color: var(--primary-darkBlue);
-  text-decoration: underline;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-white);
+  padding: 0.5rem 1rem;
+  background-color: var(--main-bg-color);
+  border: 2px solid var(--main-bg-color);
+  border-radius: 50px;
+  transition: 0.05s all;
 }
 
+/****** NEW SECTION ******/
 /* HEADTEACHER'S SPEECH COMPONENT STYLES */
 .headteacher-speech {
   text-align: justify;
@@ -194,9 +207,46 @@
 }
 
 @media (max-width: 768px) {
+  .staff-container-flex {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+  }
+
+  .speech-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .speech-grid article:first-child {
+    border-radius: 100%;
+  }
+
+  .speech-grid img {
+    height: 350px;
+    border-radius: 100%;
+    /* width: 100%; */
+  }
+
+  .speech-grid h3 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .headteacher-speech h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+  }
 }
 
 @media (max-width: 575px) {
+  .staff-container-flex {
+    grid-template-columns: 1fr;
+    margin-bottom: 1.5rem;
+  }
+
   .staff-container h1 {
     font-size: 2rem;
     line-height: 1.1;
@@ -224,12 +274,12 @@
   }
 
   .staff-container-flex figcaption {
-    position: relative;
-    color: #000;
-    padding: 0;
+    /* position: relative; */
+    /* color: #000; */
+    /* padding: 0; */
     visibility: visible;
     opacity: 1;
-    background-color: white;
+    /* background-color: white; */
   }
 
   .staff-container-flex figcaption > * {
@@ -240,21 +290,6 @@
     margin-bottom: 0.75rem;
   }
 
-  .speech-grid {
-    grid-template-columns: 1fr;
-    row-gap: 2rem;
-  }
-
-  .speech-grid h3 {
-    font-size: 1.75rem;
-    line-height: 1.2;
-    margin-bottom: 1rem;
-  }
-
-  .headteacher-speech h1 {
-    font-size: 1.75rem;
-    margin-bottom: 1.5rem;
-  }
   .headteacher-speech .heading {
     grid-template-columns: 1fr;
     margin-bottom: 1.25rem;
