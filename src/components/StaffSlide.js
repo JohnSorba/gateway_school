@@ -43,10 +43,7 @@ function StaffSlide() {
         </div>
         <div className="speech-grid">
           <article>
-            <img
-              src="https://media.istockphoto.com/id/1317804578/photo/one-businesswoman-headshot-smiling-at-the-camera.webp?b=1&s=612x612&w=0&k=20&c=XdZqQ92Yk82otKZio_pE0KURn0U08sIr5Vz9bFSm7bM="
-              alt="uncle Augustine"
-            />
+            <img src="/headteacher_img.jpg" alt="Janet Hinga" />
           </article>
           <article>
             <h3>Head Teacher's Remarks</h3>
@@ -86,10 +83,7 @@ export function HeadTeacherSpeech() {
         <h1>Head Teacher's Remarks</h1>
 
         <div className="heading">
-          <img
-            src="https://media.istockphoto.com/id/1317804578/photo/one-businesswoman-headshot-smiling-at-the-camera.webp?b=1&s=612x612&w=0&k=20&c=XdZqQ92Yk82otKZio_pE0KURn0U08sIr5Vz9bFSm7bM="
-            alt="uncle Augustine"
-          />
+          <img src="/headteacher_img.jpg" alt="Janet Hinga" />
           <p>
             <span className="text-3xl">O</span>ur staff members are not just
             educators; they are mentors, guides, and role models who play a

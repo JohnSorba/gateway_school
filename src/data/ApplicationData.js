@@ -63,14 +63,16 @@ export const AcademicPageData = [
   },
   {
     title: "Daycare & Nursery",
-    image: "/daycare_center.png",
+    // image: "/ai_daycare_baby_crawl.jpg",
+    // image: "/ai_pupils_nursery_boys_banner_img.jpg",
+    image: "/ai_pupils_nursery_girls_banner_img.jpg",
     url: "/academic/daycare-nursery",
   },
   {
     title: "Primary School",
     image: "/assemblyKid.jpg",
     image: "/three_pupils_in_a_classroom.png",
-    image: "/classroom_setting.png",
+    image: "/ai_boy_sideways.jpg",
     url: "/academic/primary-school",
   },
   {
@@ -177,33 +179,29 @@ export const AcademicNavDropdownData = [
 // Staff Profile Data
 export const profileData = [
   {
-    image:
-      "https://media.istockphoto.com/id/1476170969/photo/portrait-of-young-man-ready-for-job-business-concept.webp?b=1&s=612x612&w=0&k=20&c=A87DXDjXjoyJWkWIlLfhJYsjqKtTyuvhOg14QY4SeMQ=",
-    title: "John Doe",
+    image: "/ai_teacher_male.jpg",
+    title: "Mr. Sylvester Kamara",
     role: "Acting Headteacher",
     subject: "Mathematics Teacher",
     profileLink: "/about/administration",
   },
   {
-    image:
-      "https://media.istockphoto.com/id/938709362/photo/portrait-of-a-girl.webp?b=1&s=612x612&w=0&k=20&c=fksVRgTE7PKY24Vq-aovymiZu6lBoyFmkGujM6nIgq4=",
-    title: "Jane Smith",
+    image: "/ai_teacher_female_afro.jpg",
+    title: "Ms. Aminata Kamara",
     role: "Manager",
     subject: "English Teacher",
     profileLink: "/about/administration",
   },
   {
-    image:
-      "https://media.istockphoto.com/id/1386479313/photo/happy-millennial-afro-american-business-woman-posing-isolated-on-white.webp?b=1&s=612x612&w=0&k=20&c=MsKXmwf7TDRdKRn_lHohhmD5rvVvnGs9ry0xl6CrMT4=",
-    title: "Angela Johnson",
+    image: "/ai_teacher_female_1.jpg",
+    title: "Ms. Rebecca Marah",
     role: "Proprietress",
     subject: "Social Studies Teacher",
     profileLink: "/about/administration",
   },
   {
-    image:
-      "https://media.istockphoto.com/id/1351285381/photo/happy-young-african-american-woman-looking-at-camera.webp?b=1&s=612x612&w=0&k=20&c=MObQK8ZpTF2oL6a0mMlG2sJR-6aFMet2zz10WPUkgkE=",
-    title: "Emily Brown",
+    image: "/ai_teacher_female_2.jpg",
+    title: "Ms. Elizabeth Bockarie",
     role: "Senior Teacher",
     subject: "Biology Teacher",
     profileLink: "/about/administration",
@@ -217,7 +215,7 @@ export const serviceDetails = [
     descripiton: "A nurturing environment for early childhood development.",
     options: ["Infant Care", "Toddler Programs", "Early Learning", "Playgroup"],
     link: "academic/daycare-nursery",
-    image: "/daycare_center.png",
+    image: "/ai_daycare_baby_crawl.jpg",
   },
   {
     title: "Nursery",
@@ -229,8 +227,7 @@ export const serviceDetails = [
       "Playgroup",
     ],
     link: "academic/daycare-nursery",
-    image:
-      "https://cdn.pixabay.com/photo/2017/04/05/08/18/kindergarten-2204239_640.jpg",
+    image: "ai_pupils_nursery_boys.jpg",
   },
   {
     title: "Primary School",
@@ -242,7 +239,7 @@ export const serviceDetails = [
       "Physical Education",
     ],
     link: "academic/primary-school",
-    image: "/classroom_setting.png",
+    image: "/ai_boy_sideways.jpg",
     // image: "/three pupils in a classroom.png",
   },
   {
@@ -273,12 +270,15 @@ export const images = [
   "/teachers.jpg",
   "/awards_ceremony.jpg",
   "/awards_ceremony2.jpg",
-  "/a baby with West African descent.png",
-  "/daycare_center.png",
-  "/three_pupils_in_a_classroom.png",
-  "/focused male grade 6 primary school pupil.png",
-  "/young male student in grade 6 .png",
-  "/classroom_setting.png",
+  "/ai_daycare_baby_crawl.jpg",
+  "/ai_daycare_baby.jpg",
+  "/ai_boy_1_upclose.jpg",
+  "/ai_boy_2_upclose.jpg",
+  "/ai_boy_3_upclose.jpg",
+  "/ai_boy_sideways.jpg",
+  "/ai_pupils_nursery_girls.jpg",
+  "/ai_pupils_running_corridor.jpg",
+  "/ai_pupils_running_corridor_illustration.jpg",
 ];
 
 // ABOUT SECTION SLIDESHOW IMAGES
@@ -607,33 +607,29 @@ export const mainEvents = [
 export const testimonials = [
   {
     title: "Pupil",
-    name: "Emily Johnson",
-    image:
-      "https://images.pexels.com/photos/16160800/pexels-photo-16160800/free-photo-of-a-young-teenager-smiling.jpeg?auto=compress&cs=tinysrgb&w=400", // Replace with the image path
+    name: "Margaret Maama",
+    image: "ai_girl_with_book_1.jpg", // Replace with the image path
     statement:
       "Gateway School has been an incredible journey of discovery for me. The dedicated teachers and enriching programs have ignited my passion for learning.",
   },
   {
     title: "Pupil",
-    name: "Daniel Smith",
-    image:
-      "https://images.pexels.com/photos/5905515/pexels-photo-5905515.jpeg?auto=compress&cs=tinysrgb&w=400", // Replace with the image path
+    name: "Augustine Hinga Jr.",
+    image: "ai_boy_2_upclose.jpg", // Replace with the image path
     statement:
       "I've made lifelong friends at Gateway School. The supportive community here has not only nurtured my academic growth but also my personal development.",
   },
   {
     title: "Pupil",
-    name: "Sophia Lee",
-    image:
-      "https://images.pexels.com/photos/5905859/pexels-photo-5905859.jpeg?auto=compress&cs=tinysrgb&w=400", // Replace with the image path
+    name: "Margaret Hinga",
+    image: "ai_girl_with_book_2.jpg", // Replace with the image path
     statement:
       "Gateway School's focus on holistic education is truly inspiring. It's not just about grades; it's about character, creativity, and confidence.",
   },
   {
     title: "Pupil",
-    name: "Michael Brown",
-    image:
-      "https://images.pexels.com/photos/7407120/pexels-photo-7407120.jpeg?auto=compress&cs=tinysrgb&w=400", // Replace with the image path
+    name: "Daniel Sorba",
+    image: "ai_boy_1_upclose.jpg", // Replace with the image path
     statement:
       "I feel well-prepared for the future thanks to Gateway School's emphasis on critical thinking and problem-solving. It's a place where dreams take flight.",
   },

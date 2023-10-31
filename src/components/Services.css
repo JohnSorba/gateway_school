@@ -264,6 +264,7 @@
   .services-grid img {
     order: -1;
     border-radius: 10px;
+    height: 250px;
   }
 
   .nav-btn-container {

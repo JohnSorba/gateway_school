@@ -26,8 +26,8 @@ function HomePage({ isOpen, isDropdownOpen, toggleDropdown, toggleNavbar }) {
       <StaffSlide />
       {/* <AccApp /> */}
       <Testimonials />
-      <Gallery />
       <Admission />
+      <Gallery />
 
       <ContactUs />
     </div>
