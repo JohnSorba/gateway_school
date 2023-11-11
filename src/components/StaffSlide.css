@@ -119,7 +119,7 @@
   margin: 0 auto;
   border: 6px solid var(--subtle-background);
   color: var(--text-white);
-  background-color: var(--main-bg-blue);
+  background-color: var(--main-bg-dark);
   border-radius: 25px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.02);
 }
