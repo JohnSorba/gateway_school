@@ -156,13 +156,19 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-weight: 600;
   color: var(--main-bg-color);
   padding: 0.5rem 1rem;
   background-color: var(--text-white);
-  border: 2px solid var(--text-white);
+  border: 2px solid transparent;
   border-radius: 50px;
   transition: 0.05s all;
 }
+
+.read-more:hover {
+  background-color: var(--text-white);
+  color: var(--text-white);
+  border-color: var(--text-white);
 
 /****** NEW SECTION ******/
 /* HEADTEACHER'S SPEECH COMPONENT STYLES */
