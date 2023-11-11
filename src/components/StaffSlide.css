@@ -114,11 +114,13 @@
   display: grid;
   grid-template-columns: 200px 1fr 150px;
   gap: 2rem;
-  align-items: center;
+  align-items: flex-start;
   padding: 1rem 1rem;
   margin: 0 auto;
   border: 6px solid var(--subtle-background);
-  border-radius: 100px;
+  color: var(--text-white);
+  background-color: var(--primary-darkBlue);
+  border-radius: 25px;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.02);
 }
 
@@ -152,10 +154,10 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--text-white);
+  color: var(--main-bg-color);
   padding: 0.5rem 1rem;
-  background-color: var(--main-bg-color);
-  border: 2px solid var(--main-bg-color);
+  background-color: var(--text-white);
+  border: 2px solid var(--text-white);
   border-radius: 50px;
   transition: 0.05s all;
 }
