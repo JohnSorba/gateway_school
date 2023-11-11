@@ -115,13 +115,13 @@
   grid-template-columns: 200px 1fr 150px;
   gap: 2rem;
   align-items: flex-start;
-  padding: 1rem 1rem;
+  padding: 1.5rem 1.5rem;
   margin: 0 auto;
   border: 6px solid var(--subtle-background);
   color: var(--text-white);
-  background-color: var(--primary-darkBlue);
+  background-color: var(--main-bg-blue);
   border-radius: 25px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.02);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 255, 0.02);
 }
 
 .speech-grid article:first-child {
@@ -139,6 +139,7 @@
 }
 
 .speech-grid h3 {
+  color: var(--text-white);
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -151,6 +152,7 @@
 
 .read-more {
   justify-self: center;
+  align-self: flex-end;
   display: flex;
   align-items: center;
   gap: 0.5rem;
