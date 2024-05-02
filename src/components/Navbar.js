@@ -119,6 +119,15 @@ function Navbar() {
                     Admissions
                   </NavLink>
                 </li>
+                <li onClick={toggleNavbar}>
+                  <NavLink
+                    to="http://localhost:5173/home"
+                    target="blank"
+                    className="dropdown-link"
+                  >
+                    Gateway Connect
+                  </NavLink>
+                </li>
               </ul>
             </li>
 
