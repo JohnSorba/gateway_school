@@ -234,7 +234,7 @@ export const serviceDetails = [
     descripiton: "Building a strong foundation for academic success.",
     options: [
       "Elementary Education",
-      "WASSCE Prep",
+      "NPSE Prep",
       "Math & Science Focus",
       "Physical Education",
     ],
@@ -249,7 +249,7 @@ export const serviceDetails = [
       "College Prep",
       "Extracurricular Activities",
       "Advanced Placement",
-      "Career Counseling",
+      "BECE Prep",
     ],
     link: "academic/high-school",
     image:

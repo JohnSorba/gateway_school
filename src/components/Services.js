@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { CheckBadgeIcon } from "@heroicons/react/24/solid";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
-import "./Services.css";
 import { NavLink } from "react-router-dom";
 import { serviceDetails } from "../data/ApplicationData";
 import { useSubpage } from "../Contexts/SubpageContext";
 import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
+import "./Services.css";
 
 function Services() {
   const [currentIndex, setCurrentIndex] = useState(0);

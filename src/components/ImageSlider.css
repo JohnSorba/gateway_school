@@ -15,7 +15,7 @@
   height: auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 40px;
+  grid-template-rows: auto auto 40px;
   width: 100%;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
 }

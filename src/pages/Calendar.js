@@ -54,7 +54,7 @@ function Calendar() {
             {/* <!-- September --> */}
             <tr>
               <td rowSpan="4" className="month">
-                September
+                January
               </td>
               <td>5-6</td>
               <td>School Reopens</td>
@@ -88,7 +88,7 @@ function Calendar() {
             {/* <!-- October --> */}
             <tr>
               <td rowSpan="3" className="month">
-                October
+                February
               </td>
               <td>10</td>
               <td>National Holiday (No School)</td>
@@ -110,7 +110,7 @@ function Calendar() {
             {/* <!-- November --> */}
             <tr>
               <td rowSpan="3" className="month">
-                November
+                March
               </td>
               <td>2</td>
               <td>Parent-Teacher Meeting (PTM) - Primary School</td>
@@ -135,7 +135,7 @@ function Calendar() {
             {/* <!-- December --> */}
             <tr>
               <td rowSpan="3" className="month">
-                December
+                April
               </td>
               <td>15</td>
               <td>Winter Concert</td>
@@ -147,7 +147,7 @@ function Calendar() {
               <td>Students break for the winter holiday.</td>
             </tr>
             <tr>
-              <td>24 - 26 Jan 2024</td>
+              <td>24-26</td>
               <td>Winter Break</td>
               <td>School is closed for the winter holiday.</td>
             </tr>

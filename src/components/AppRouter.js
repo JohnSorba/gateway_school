@@ -35,7 +35,7 @@ function AppRouter() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* NAVIGATION */}
       <Routes>
