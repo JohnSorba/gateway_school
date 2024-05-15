@@ -118,7 +118,9 @@ function Footer() {
                 <br />
                 <br />
                 <span>Email: </span>
-                <a href="mailto:hello@gateway.com">hello@gateway.com</a>
+                <a href="mailto:hello@gateway.com">
+                  info@gatewayschool-sierraleone.org
+                </a>
               </p>
             </address>
           </div>
